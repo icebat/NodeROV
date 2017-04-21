@@ -12,22 +12,21 @@ I have had 5+ successful trips at the current date (21st April 17) but are still
 
 1. Install raspberry pi
 2. Do the following:
-   1. sudo raspi-config
-   2. Expand File System
-   3. Enable Camera
-   4. Advance -> Enable I2C
-   5. sudo  reboot
+   *. sudo raspi-config
+   *. Expand File System
+   *. Enable Camera
+   *. Advance -> Enable I2C
+   *. sudo  reboot
 3. Enable i2c read-write: *sudo chmod o+rw /dev/i2c*
 4. install NodeJS and NPM with:
-
-   1. wget https://nodejs.org/dist/v6.9.5/node-v6.9.5-linux-armv7l.tar.xz
-   2. sudo mv node-v6.9.5-linux-armv7l.tar.xz /
-   3. cd /opt
-   4. sudo tar xf node-v6.9.5-linux-armv7l.tar.xz
-   5. sudo mv node-v6.9.5-linux-armv7l nodejs
-   6. sudo rm node-v6.9.5-linux-armv7l.tar.xz
-   7. sudo ln -s /opt/nodejs/bin/node /usr/bin/node
-   8. sudo ln -s /opt/nodejs/bin/npm /usr/bin/npm
+   *. wget https://nodejs.org/dist/v6.9.5/node-v6.9.5-linux-armv7l.tar.xz
+   *. sudo mv node-v6.9.5-linux-armv7l.tar.xz /
+   *. cd /opt
+   *. sudo tar xf node-v6.9.5-linux-armv7l.tar.xz
+   *. sudo mv node-v6.9.5-linux-armv7l nodejs
+   *. sudo rm node-v6.9.5-linux-armv7l.tar.xz
+   *. sudo ln -s /opt/nodejs/bin/node /usr/bin/node
+   *. sudo ln -s /opt/nodejs/bin/npm /usr/bin/npm
 
 
 
