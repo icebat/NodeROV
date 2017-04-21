@@ -1,5 +1,5 @@
-node_modules
-recordings
-!recordings/.gitkeep 
-logs
+node_modules/*
+recordings/*
+!recordings/.gitkeep
+logs/*
 !logs/.gitkeep
