@@ -28,15 +28,13 @@ I have had 5+ successful trips at the current date (21st April 17) but are still
    *. sudo ln -s /opt/nodejs/bin/node /usr/bin/node
    *. sudo ln -s /opt/nodejs/bin/npm /usr/bin/npm
 
-
-
 # Extra setup (Recommended)
 
 * Allow node to gain access to ports below 1024 if you want to use port 80 and 82
    * ```sudo setcap 'cap_net_bind_service=+ep' /opt/nodejs/bin/node```
 * Disable HDMI add the following to ***/etc/rc.local***
    * ```sudo /opt/vc/bin/tvservice -o```
-*. Enable pi to run the script at boot, add to ***/etc/rc.local***:
+* Enable pi to run the script at boot, add to ***/etc/rc.local***:
    * ```sudo -H -u pi bash -c 'sh ~/NodeROV/start.sh```
 
 # DISCLAIMER
