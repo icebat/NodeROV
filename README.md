@@ -36,7 +36,7 @@ I have had 5+ successful trips at the current date (21st April 17) but are still
    * ```sudo setcap 'cap_net_bind_service=+ep' /opt/nodejs/bin/node```
 * Disable HDMI add the following to ***/etc/rc.local***
    * ```sudo /opt/vc/bin/tvservice -o```
-3. Enable pi to run the script at boot, add to ***/etc/rc.local***:
+*. Enable pi to run the script at boot, add to ***/etc/rc.local***:
    * ```sudo -H -u pi bash -c 'sh ~/NodeROV/start.sh```
 
 # DISCLAIMER
