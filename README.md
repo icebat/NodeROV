@@ -37,6 +37,15 @@ I have had 5+ successful trips at the current date (21st April 17) but are still
 * Enable pi to run the script at boot, add to ***/etc/rc.local***:
    * ```sudo -H -u pi bash -c 'sh ~/NodeROV/start.sh```
 
+# Installing NodeROV
+
+1. Login as user ***pi*** on your RaspberryPI
+2. Run command: ```cd ~```
+3. Run command: ```git clone https://github.com/thorleifjaocbsen/NodeROV.git```
+4. Run command: ```cd ~/NodeROV```
+5. Run command: ```npm install```
+6. Reboot your Pi (```sudo reboot```)
+
 # DISCLAIMER
 
 Use this software at own risk, I do NOT recommend you to use this software if you do now know what you are doing. It is not 100% finished and stuff might go haywire at any second! I might remove this disclaimer when I'm done with the project, but who knows? Who wants to take responsibility for anything these days! :)
