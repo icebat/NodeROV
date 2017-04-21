@@ -38,7 +38,7 @@ module.exports = function(acc, mag, device) {
     },
     mag       : {
       threshold   : 10,
-      avrgcounter: 0
+      avrgcounter : 0,
       raw     : { x: 0, y: 0, z: 0 },
       maraw   : { x: 0, y: 0, z: 0 },
       mtesla  : { x: 0, y: 0, z: 0 },
