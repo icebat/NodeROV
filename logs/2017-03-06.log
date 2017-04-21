@@ -1,5 +1,0 @@
-{"level":"info","message":"Initializing ROV Class","timestamp":"2017-03-06T21:17:27.130Z"}
-{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-03-06T21:17:27.166Z"}
-{"level":"info","message":"Starting webserver","timestamp":"2017-03-06T21:17:27.187Z"}
-{"level":"info","message":"Websocket: Listning on 81","timestamp":"2017-03-06T21:17:27.244Z"}
-{"level":"info","message":"Webserver started on port 80","timestamp":"2017-03-06T21:17:27.252Z"}

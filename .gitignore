@@ -1,5 +1,3 @@
 node_modules/*
 recordings/*
 !recordings/.gitkeep
-logs/*
-!logs/.gitkeep
