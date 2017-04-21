@@ -21,7 +21,7 @@ var ptSensorExt = new MS5837();
 var ptSensorInt = new BMP180();
 var accmag      = new LSM303();
 
-// LOOPidodoop
+// LOOP
 // 1hz - Update ping
 // 10hz - Update gyro
 // 50Hz - Update PWM
@@ -51,13 +51,13 @@ rov.depth.PID   = utils.PID(3, 0.0002, 0, 0, -400, 400);
 rov.heading.PID = utils.PID(3, 0.0002, 0, 0, -400, 400);
 
 // Populate accel & mag calibration:
-/*accmag.acc.offset = config.acc.offset;
+accmag.acc.offset = config.acc.offset;
 accmag.acc.max    = config.acc.max;
 accmag.acc.min    = config.acc.min;
 accmag.mag.offset = config.mag.offset;
 accmag.mag.max    = config.mag.max;
-accmag.mag.min    = config.mag.min;*/
-accmag.acc.flat = config.acc.flat;
+accmag.mag.min    = config.mag.min;
+accmag.acc.flat   = config.acc.flat;
 
 // Change power sensor i2c data
 // battery.setVoltMultiplier(9.776923076923078);
