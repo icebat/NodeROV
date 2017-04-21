@@ -1,0 +1,11 @@
+{"level":"info","message":"Initializing ROV Class","timestamp":"2017-03-15T18:03:38.968Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-03-15T18:03:39.009Z"}
+{"level":"info","message":"MS5387: CRC4 check success and intializing.","timestamp":"2017-03-15T18:03:39.035Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-03-15T18:03:39.045Z"}
+{"level":"info","message":"Websocket: Listning on 81","timestamp":"2017-03-15T18:03:39.102Z"}
+{"level":"info","message":"Webserver started on port 80","timestamp":"2017-03-15T18:03:39.118Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.142:52340","timestamp":"2017-03-15T18:03:40.806Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-15T18:03:40.811Z"}
+{"level":"info","message":"CLIENT: 1489601020279 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-15T18:03:40.897Z"}
+{"level":"info","message":"CLIENT: 1489601020311 Video Streamer Service - Connected","timestamp":"2017-03-15T18:03:40.903Z"}
+{"level":"info","message":"CLIENT: 1489601020379 Video Streamer Service - Starting data stream","timestamp":"2017-03-15T18:03:40.911Z"}

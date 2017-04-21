@@ -1,0 +1,441 @@
+{"level":"info","message":"Initializing NodeROV","timestamp":"2017-02-26T00:24:50.832Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-02-26T00:24:50.857Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-02-26T00:24:50.858Z"}
+{"level":"info","message":"Listning for scokets","timestamp":"2017-02-26T00:24:50.949Z"}
+{"level":"info","message":"Webserver started on port 3000","timestamp":"2017-02-26T00:24:50.957Z"}
+{"level":"info","message":"Initializing NodeROV","timestamp":"2017-02-26T00:25:08.830Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-02-26T00:25:08.855Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-02-26T00:25:08.857Z"}
+{"level":"info","message":"Listning for scokets","timestamp":"2017-02-26T00:25:08.948Z"}
+{"level":"info","message":"Webserver started on port 3000","timestamp":"2017-02-26T00:25:08.956Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:25:10.757Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T00:25:10.763Z"}
+{"level":"info","message":"Initializing NodeROV","timestamp":"2017-02-26T00:27:52.523Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-02-26T00:27:52.549Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-02-26T00:27:52.551Z"}
+{"level":"info","message":"Listning for scokets","timestamp":"2017-02-26T00:27:52.641Z"}
+{"level":"info","message":"Webserver started on port 3000","timestamp":"2017-02-26T00:27:52.651Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:27:55.140Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T00:27:55.145Z"}
+{"level":"info","message":"Initializing NodeROV","timestamp":"2017-02-26T00:32:24.770Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-02-26T00:32:24.797Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-02-26T00:32:24.799Z"}
+{"level":"info","message":"Listning for scokets","timestamp":"2017-02-26T00:32:24.890Z"}
+{"level":"info","message":"Webserver started on port 3000","timestamp":"2017-02-26T00:32:24.901Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:32:25.652Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T00:32:25.657Z"}
+{"level":"info","message":"Initializing NodeROV","timestamp":"2017-02-26T00:33:22.793Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-02-26T00:33:22.819Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-02-26T00:33:22.821Z"}
+{"level":"info","message":"Listning for scokets","timestamp":"2017-02-26T00:33:22.909Z"}
+{"level":"info","message":"Webserver started on port 3000","timestamp":"2017-02-26T00:33:22.920Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:33:23.550Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T00:33:23.554Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:33:23.908Z"}
+{"level":"info","message":"Initializing NodeROV","timestamp":"2017-02-26T00:33:37.401Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-02-26T00:33:37.428Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-02-26T00:33:37.430Z"}
+{"level":"info","message":"Listning for scokets","timestamp":"2017-02-26T00:33:37.519Z"}
+{"level":"info","message":"Webserver started on port 3000","timestamp":"2017-02-26T00:33:37.529Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:33:42.336Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T00:33:42.340Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T00:35:43.818Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T00:35:43.820Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T00:35:43.823Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:35:44.033Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T00:35:44.036Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T00:36:00.708Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T00:36:00.710Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T00:36:00.711Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:36:00.929Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T00:36:00.931Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T00:38:34.352Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T00:38:34.354Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T00:38:34.355Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:38:34.672Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T00:38:34.675Z"}
+{"level":"info","message":"Initializing NodeROV","timestamp":"2017-02-26T00:39:03.240Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-02-26T00:39:03.267Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-02-26T00:39:03.269Z"}
+{"level":"info","message":"Listning for scokets","timestamp":"2017-02-26T00:39:03.358Z"}
+{"level":"info","message":"Webserver started on port 3000","timestamp":"2017-02-26T00:39:03.368Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:39:07.848Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T00:39:07.852Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T00:39:55.516Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T00:39:55.518Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T00:39:55.519Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:39:55.738Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T00:39:55.740Z"}
+{"level":"warn","message":"HB: No response the last 5 sec, client timeout!","timestamp":"2017-02-26T00:40:00.978Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:40:03.801Z"}
+{"level":"info","message":"Initializing NodeROV","timestamp":"2017-02-26T00:40:12.295Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-02-26T00:40:12.321Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-02-26T00:40:12.323Z"}
+{"level":"info","message":"Listning for scokets","timestamp":"2017-02-26T00:40:12.415Z"}
+{"level":"info","message":"Webserver started on port 3000","timestamp":"2017-02-26T00:40:12.425Z"}
+{"level":"info","message":"Initializing NodeROV","timestamp":"2017-02-26T00:40:22.345Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-02-26T00:40:22.371Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-02-26T00:40:22.373Z"}
+{"level":"info","message":"Listning for scokets","timestamp":"2017-02-26T00:40:22.462Z"}
+{"level":"info","message":"Webserver started on port 3000","timestamp":"2017-02-26T00:40:22.472Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:40:25.895Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T00:40:25.899Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T00:41:18.096Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T00:41:18.098Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T00:41:18.099Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:41:18.397Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T00:41:18.399Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T00:45:42.850Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T00:45:42.852Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T00:45:42.854Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:45:43.092Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T00:45:43.094Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T00:45:54.976Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T00:45:54.977Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T00:45:54.978Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:45:55.194Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T00:45:55.197Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T00:46:26.534Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T00:46:26.536Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T00:46:26.537Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:46:26.748Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T00:46:26.751Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T00:49:51.043Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T00:49:51.045Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T00:49:51.046Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:49:51.299Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T00:49:51.301Z"}
+{"level":"info","message":"Initializing NodeROV","timestamp":"2017-02-26T00:52:15.950Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-02-26T00:52:15.981Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-02-26T00:52:15.983Z"}
+{"level":"info","message":"Listning for scokets","timestamp":"2017-02-26T00:52:16.070Z"}
+{"level":"info","message":"Webserver started on port 3000","timestamp":"2017-02-26T00:52:16.078Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:52:17.039Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T00:52:17.044Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T00:54:50.322Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T00:54:50.324Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T00:54:50.325Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:54:50.535Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T00:54:50.537Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T00:58:49.926Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T00:58:49.927Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T00:58:49.928Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:58:50.146Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T00:58:50.149Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T00:59:01.758Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T00:59:01.759Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T00:59:01.760Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:59:01.975Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T00:59:01.977Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T00:59:19.970Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T00:59:19.972Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T00:59:19.973Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:59:20.182Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T00:59:20.183Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T00:59:33.662Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T00:59:33.663Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T00:59:33.664Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T00:59:33.871Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T00:59:33.873Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:05:16.752Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:05:16.754Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:05:16.755Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:05:16.979Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:05:16.981Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:05:38.029Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:05:38.030Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:05:38.031Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:05:38.265Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:05:38.266Z"}
+{"level":"warn","message":"HB: No response the last 5 sec, client timeout!","timestamp":"2017-02-26T01:05:43.033Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:05:58.559Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:05:58.560Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:05:58.561Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:05:58.775Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:05:58.777Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:06:39.998Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:06:39.999Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:06:40.001Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:06:40.214Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:06:40.215Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:07:08.074Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:07:08.075Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:07:08.075Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:07:08.294Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:07:08.297Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:07:57.361Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:07:57.362Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:07:57.365Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:07:57.574Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:07:57.576Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:08:06.374Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:08:06.376Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:08:06.376Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:08:06.580Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:08:06.582Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:09:19.468Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:09:19.469Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:09:19.470Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:09:19.681Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:09:19.682Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:11:26.102Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:11:26.103Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:11:26.104Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:11:26.335Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:11:26.336Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:11:57.228Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:11:57.229Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:11:57.229Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:11:57.442Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:11:57.444Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:12:07.146Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:12:07.148Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:12:07.149Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:12:07.353Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:12:07.354Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:13:18.302Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:13:18.304Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:13:18.304Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:13:18.521Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:13:18.522Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:13:56.987Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:13:56.988Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:13:56.989Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:13:57.194Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:13:57.196Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:14:01.154Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:14:01.158Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:14:01.158Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:14:01.347Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:14:01.348Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:14:43.901Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:14:43.903Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:14:43.903Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:14:44.125Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:14:44.127Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:17:15.926Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:17:15.927Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:17:15.928Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:17:16.145Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:17:16.146Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:19:27.722Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:19:27.723Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:19:27.724Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:19:27.934Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:19:27.935Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:21:22.295Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:21:22.296Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:21:22.297Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:21:22.510Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:21:22.512Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:22:18.344Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:22:18.345Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:22:18.346Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:22:18.642Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:22:18.644Z"}
+{"level":"warn","message":"HB: No response the last 5 sec, client timeout!","timestamp":"2017-02-26T01:22:23.179Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:22:31.795Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:22:31.798Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:22:31.803Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:22:32.078Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:22:32.079Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:23:07.764Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:23:07.766Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:23:07.766Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:23:07.983Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:23:07.984Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:23:59.594Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:23:59.595Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:23:59.596Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:23:59.884Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:23:59.885Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:24:04.172Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:24:04.173Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:24:04.173Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:24:04.378Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:24:04.379Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:24:07.084Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:24:07.086Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:24:07.087Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:24:07.282Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:24:07.283Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:24:18.140Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:24:18.144Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:24:18.144Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:24:18.433Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:24:18.434Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:24:30.201Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:24:30.202Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:24:30.203Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:24:30.413Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:24:30.414Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:25:02.156Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:25:02.157Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:25:02.160Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:25:02.365Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:25:02.367Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:25:19.760Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:25:19.761Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:25:19.762Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:25:19.970Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:25:19.971Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:25:27.906Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:25:27.908Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:25:27.909Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:25:28.133Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:25:28.134Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:26:11.544Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:26:11.545Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:26:11.545Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:26:11.756Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:26:11.757Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:27:17.351Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:27:17.353Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:27:17.353Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:27:17.587Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:27:17.589Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:27:26.750Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:27:26.751Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:27:26.752Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:27:26.972Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:27:26.973Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:27:29.453Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:27:29.454Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:27:29.455Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:27:29.660Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:27:29.661Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:29:58.413Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:29:58.414Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:29:58.415Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:29:58.630Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:29:58.632Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:30:26.400Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:30:26.401Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:30:26.402Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:30:26.610Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:30:26.612Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:31:18.355Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:31:18.356Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:31:18.357Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:31:18.563Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:31:18.564Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:31:28.159Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:31:28.160Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:31:28.161Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:31:28.370Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:31:28.371Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:31:37.684Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:31:37.685Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:31:37.686Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:31:37.883Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:31:37.885Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:31:43.846Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:31:43.848Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:31:43.849Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:31:44.037Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:31:44.038Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:31:59.160Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:31:59.161Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:31:59.162Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:31:59.373Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:31:59.374Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:32:10.497Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:32:10.498Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:32:10.498Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:32:10.704Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:32:10.705Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:32:33.597Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:32:33.598Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:32:33.599Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:32:33.804Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:32:33.805Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:32:36.381Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:32:36.382Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:32:36.383Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:32:36.583Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:32:36.584Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:32:50.549Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:32:50.551Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:32:50.552Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:32:50.758Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:32:50.760Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:33:39.287Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:33:39.288Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:33:39.289Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:33:39.500Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:33:39.502Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:35:41.200Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:35:41.201Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:35:41.201Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:35:41.411Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:35:41.412Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:37:03.575Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:37:03.576Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:37:03.577Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:37:03.795Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:37:03.797Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:40:33.931Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:40:33.932Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:40:33.933Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:40:34.152Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:40:34.154Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:43:15.133Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:43:15.134Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:43:15.135Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:43:15.351Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:43:15.352Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:43:25.198Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:43:25.199Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:43:25.200Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:43:25.415Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:43:25.416Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:43:35.260Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:43:35.262Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:43:35.263Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:43:35.466Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:43:35.467Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:43:52.380Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:43:52.381Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:43:52.382Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:43:52.592Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:43:52.593Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:44:01.400Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:44:01.402Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:44:01.403Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:44:01.603Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:44:01.604Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:44:59.434Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:44:59.435Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:44:59.436Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:44:59.639Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:44:59.641Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:45:48.787Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:45:48.789Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:45:48.789Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:45:49.008Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:45:49.009Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:46:27.037Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:46:27.038Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:46:27.039Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:46:27.349Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:46:27.350Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:46:47.508Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:46:47.509Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:46:47.510Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:46:47.727Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:46:47.728Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:46:53.860Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:46:53.861Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:46:53.862Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:46:54.066Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:46:54.068Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:47:44.181Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:47:44.183Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:47:44.184Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:47:44.489Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:47:44.490Z"}
+{"level":"info","message":"Client disconnected from socket.io","timestamp":"2017-02-26T01:49:00.042Z"}
+{"level":"verbose","message":"Set all controls to neutral / off","timestamp":"2017-02-26T01:49:00.044Z"}
+{"level":"info","message":"Stopping heartbeat","timestamp":"2017-02-26T01:49:00.045Z"}
+{"level":"info","message":"Client connected via socket.io","timestamp":"2017-02-26T01:50:23.993Z"}
+{"level":"info","message":"Starting heartbeat","timestamp":"2017-02-26T01:50:23.994Z"}

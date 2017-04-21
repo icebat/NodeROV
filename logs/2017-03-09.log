@@ -1,0 +1,525 @@
+{"level":"info","message":"Initializing ROV Class","timestamp":"2017-03-09T23:12:44.080Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-03-09T23:12:44.100Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-03-09T23:12:44.103Z"}
+{"level":"info","message":"Websocket: Listning on 81","timestamp":"2017-03-09T23:12:44.134Z"}
+{"level":"info","message":"Webserver started on port 80","timestamp":"2017-03-09T23:12:44.141Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50433","timestamp":"2017-03-09T23:12:59.618Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:12:59.620Z"}
+{"level":"info","message":"CLIENT: 1489101179427 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:12:59.629Z"}
+{"level":"info","message":"Initializing ROV Class","timestamp":"2017-03-09T23:13:58.524Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-03-09T23:13:58.545Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-03-09T23:13:58.550Z"}
+{"level":"info","message":"Websocket: Listning on 81","timestamp":"2017-03-09T23:13:58.581Z"}
+{"level":"info","message":"Webserver started on port 80","timestamp":"2017-03-09T23:13:58.589Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50459","timestamp":"2017-03-09T23:14:01.663Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:14:01.668Z"}
+{"level":"info","message":"CLIENT: 1489101241486 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:14:01.688Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50475","timestamp":"2017-03-09T23:14:49.650Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:14:49.651Z"}
+{"level":"info","message":"CLIENT: 1489101289461 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:14:49.658Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50481","timestamp":"2017-03-09T23:15:12.253Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:15:12.254Z"}
+{"level":"info","message":"CLIENT: 1489101312066 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:15:12.264Z"}
+{"level":"info","message":"CLIENT: 1489101312091 Video: Connected to 10.0.1.246:82","timestamp":"2017-03-09T23:15:12.287Z"}
+{"level":"info","message":"CLIENT: 1489101312095 Video: Unknown data: Video Streamer Service - Connected","timestamp":"2017-03-09T23:15:12.292Z"}
+{"level":"info","message":"CLIENT: 1489101356161 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:15:56.361Z"}
+{"level":"info","message":"CLIENT: 1489101361163 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:16:01.362Z"}
+{"level":"info","message":"CLIENT: 1489101361175 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:16:01.372Z"}
+{"level":"info","message":"CLIENT: 1489101366176 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:16:06.378Z"}
+{"level":"info","message":"CLIENT: 1489101366200 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:16:06.396Z"}
+{"level":"info","message":"CLIENT: 1489101371201 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:16:11.402Z"}
+{"level":"info","message":"CLIENT: 1489101371210 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:16:11.407Z"}
+{"level":"info","message":"CLIENT: 1489101376210 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:16:16.407Z"}
+{"level":"info","message":"CLIENT: 1489101376222 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:16:16.424Z"}
+{"level":"info","message":"CLIENT: 1489101381222 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:16:21.423Z"}
+{"level":"info","message":"CLIENT: 1489101381231 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:16:21.429Z"}
+{"level":"info","message":"CLIENT: 1489101386232 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:16:26.432Z"}
+{"level":"info","message":"CLIENT: 1489101386243 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:16:26.439Z"}
+{"level":"info","message":"CLIENT: 1489101391243 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:16:31.442Z"}
+{"level":"info","message":"CLIENT: 1489101391251 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:16:31.447Z"}
+{"level":"info","message":"CLIENT: 1489101396251 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:16:36.448Z"}
+{"level":"info","message":"CLIENT: 1489101396262 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:16:36.459Z"}
+{"level":"info","message":"CLIENT: 1489101401263 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:16:41.463Z"}
+{"level":"info","message":"CLIENT: 1489101401276 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:16:41.473Z"}
+{"level":"info","message":"CLIENT: 1489101406277 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:16:46.474Z"}
+{"level":"info","message":"CLIENT: 1489101406282 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:16:46.479Z"}
+{"level":"info","message":"CLIENT: 1489101411282 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:16:51.483Z"}
+{"level":"info","message":"CLIENT: 1489101411294 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:16:51.491Z"}
+{"level":"info","message":"CLIENT: 1489101416294 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:16:56.497Z"}
+{"level":"info","message":"CLIENT: 1489101416310 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:16:56.506Z"}
+{"level":"info","message":"Initializing ROV Class","timestamp":"2017-03-09T23:20:15.645Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-03-09T23:20:15.666Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-03-09T23:20:15.670Z"}
+{"level":"info","message":"Websocket: Listning on 81","timestamp":"2017-03-09T23:20:15.700Z"}
+{"level":"info","message":"Webserver started on port 80","timestamp":"2017-03-09T23:20:15.707Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50589","timestamp":"2017-03-09T23:20:17.101Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:20:17.103Z"}
+{"level":"info","message":"CLIENT: 1489101616911 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:20:17.113Z"}
+{"level":"info","message":"CLIENT: 1489101619039 Video Streamer Service - Connected","timestamp":"2017-03-09T23:20:19.233Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50603","timestamp":"2017-03-09T23:20:46.345Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:20:46.347Z"}
+{"level":"info","message":"CLIENT: 1489101646170 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:20:46.363Z"}
+{"level":"info","message":"CLIENT: 1489101646217 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:20:46.410Z"}
+{"level":"warn","message":"HB: No response the last 2 sec, client timeout!","timestamp":"2017-03-09T23:20:48.351Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50605","timestamp":"2017-03-09T23:20:50.554Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:20:50.556Z"}
+{"level":"info","message":"CLIENT: 1489101650367 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:20:50.561Z"}
+{"level":"info","message":"CLIENT: 1489101650397 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:20:50.590Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50607","timestamp":"2017-03-09T23:20:51.790Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:20:51.794Z"}
+{"level":"info","message":"CLIENT: 1489101651606 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:20:51.800Z"}
+{"level":"info","message":"CLIENT: 1489101651608 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:20:51.802Z"}
+{"level":"warn","message":"HB: No response the last 2 sec, client timeout!","timestamp":"2017-03-09T23:20:52.796Z"}
+{"level":"info","message":"CLIENT: 1489101656610 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:20:56.805Z"}
+{"level":"info","message":"CLIENT: 1489101656617 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:20:56.811Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50612","timestamp":"2017-03-09T23:20:59.372Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:20:59.373Z"}
+{"level":"info","message":"CLIENT: 1489101659184 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:20:59.377Z"}
+{"level":"info","message":"CLIENT: 1489101659186 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:20:59.379Z"}
+{"level":"info","message":"CLIENT: 1489101664186 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:21:04.379Z"}
+{"level":"info","message":"CLIENT: 1489101664191 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:21:04.384Z"}
+{"level":"info","message":"CLIENT: 1489101669192 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:21:09.386Z"}
+{"level":"info","message":"CLIENT: 1489101669203 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:21:09.400Z"}
+{"level":"info","message":"CLIENT: 1489101674204 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:21:14.403Z"}
+{"level":"info","message":"CLIENT: 1489101674219 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:21:14.412Z"}
+{"level":"info","message":"CLIENT: 1489101679219 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:21:19.416Z"}
+{"level":"info","message":"CLIENT: 1489101679228 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:21:19.421Z"}
+{"level":"info","message":"CLIENT: 1489101684229 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:21:24.425Z"}
+{"level":"info","message":"CLIENT: 1489101684239 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:21:24.433Z"}
+{"level":"info","message":"CLIENT: 1489101689239 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:21:29.439Z"}
+{"level":"info","message":"CLIENT: 1489101689256 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:21:29.449Z"}
+{"level":"info","message":"CLIENT: 1489101694256 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:21:34.452Z"}
+{"level":"info","message":"CLIENT: 1489101694265 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:21:34.458Z"}
+{"level":"info","message":"CLIENT: 1489101699265 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:21:39.462Z"}
+{"level":"info","message":"CLIENT: 1489101699276 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:21:39.470Z"}
+{"level":"info","message":"Initializing ROV Class","timestamp":"2017-03-09T23:21:51.508Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-03-09T23:21:51.528Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-03-09T23:21:51.533Z"}
+{"level":"info","message":"Websocket: Listning on 81","timestamp":"2017-03-09T23:21:51.564Z"}
+{"level":"info","message":"Webserver started on port 80","timestamp":"2017-03-09T23:21:51.572Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50643","timestamp":"2017-03-09T23:21:52.046Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:21:52.050Z"}
+{"level":"info","message":"CLIENT: 1489101711854 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:21:52.060Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50645","timestamp":"2017-03-09T23:21:52.534Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:21:52.536Z"}
+{"level":"info","message":"CLIENT: 1489101712382 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:21:52.580Z"}
+{"level":"info","message":"Initializing ROV Class","timestamp":"2017-03-09T23:22:10.852Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-03-09T23:22:10.872Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-03-09T23:22:10.876Z"}
+{"level":"info","message":"Websocket: Listning on 81","timestamp":"2017-03-09T23:22:10.907Z"}
+{"level":"info","message":"Webserver started on port 80","timestamp":"2017-03-09T23:22:10.914Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50655","timestamp":"2017-03-09T23:22:15.141Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:22:15.146Z"}
+{"level":"info","message":"CLIENT: 1489101734949 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:22:15.161Z"}
+{"level":"info","message":"Initializing ROV Class","timestamp":"2017-03-09T23:22:36.235Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-03-09T23:22:36.256Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-03-09T23:22:36.259Z"}
+{"level":"info","message":"Websocket: Listning on 81","timestamp":"2017-03-09T23:22:36.290Z"}
+{"level":"info","message":"Webserver started on port 80","timestamp":"2017-03-09T23:22:36.296Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50662","timestamp":"2017-03-09T23:22:39.564Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:22:39.567Z"}
+{"level":"info","message":"CLIENT: 1489101759376 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:22:39.577Z"}
+{"level":"info","message":"CLIENT: 1489101761548 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:22:41.746Z"}
+{"level":"info","message":"CLIENT: 1489101766548 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:22:46.747Z"}
+{"level":"info","message":"CLIENT: 1489101766561 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:22:46.755Z"}
+{"level":"info","message":"CLIENT: 1489101771561 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:22:51.762Z"}
+{"level":"info","message":"CLIENT: 1489101771578 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:22:51.770Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50672","timestamp":"2017-03-09T23:22:55.920Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:22:55.922Z"}
+{"level":"info","message":"CLIENT: 1489101775733 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:22:55.926Z"}
+{"level":"info","message":"CLIENT: 1489101775764 Video: Connected to 10.0.1.246:82","timestamp":"2017-03-09T23:22:55.956Z"}
+{"level":"info","message":"CLIENT: 1489101775766 Video: Unknown data: Video Streamer Service - Connected","timestamp":"2017-03-09T23:22:55.958Z"}
+{"level":"info","message":"CLIENT: 1489101826274 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:23:46.467Z"}
+{"level":"info","message":"CLIENT: 1489101831275 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:23:51.474Z"}
+{"level":"info","message":"CLIENT: 1489101831364 Video Streamer Service - Connected","timestamp":"2017-03-09T23:23:51.556Z"}
+{"level":"info","message":"CLIENT: 1489101858805 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:24:18.997Z"}
+{"level":"info","message":"CLIENT: 1489101863806 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:24:23.998Z"}
+{"level":"info","message":"CLIENT: 1489101863810 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:24:24.003Z"}
+{"level":"info","message":"CLIENT: 1489101868812 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:24:29.008Z"}
+{"level":"info","message":"CLIENT: 1489101868823 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:24:29.014Z"}
+{"level":"info","message":"CLIENT: 1489101873824 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:24:34.018Z"}
+{"level":"info","message":"CLIENT: 1489101873838 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:24:34.030Z"}
+{"level":"info","message":"CLIENT: 1489101878838 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:24:39.033Z"}
+{"level":"info","message":"CLIENT: 1489101878887 Video Streamer Service - Connected","timestamp":"2017-03-09T23:24:39.079Z"}
+{"level":"info","message":"CLIENT: 1489101883659 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:24:43.853Z"}
+{"level":"info","message":"CLIENT: 1489101888660 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:24:48.852Z"}
+{"level":"info","message":"CLIENT: 1489101888673 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:24:48.865Z"}
+{"level":"info","message":"CLIENT: 1489101893673 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:24:53.865Z"}
+{"level":"info","message":"CLIENT: 1489101893678 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:24:53.870Z"}
+{"level":"info","message":"CLIENT: 1489101898679 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:24:58.874Z"}
+{"level":"info","message":"CLIENT: 1489101898691 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:24:58.885Z"}
+{"level":"info","message":"CLIENT: 1489101903692 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:25:03.887Z"}
+{"level":"info","message":"CLIENT: 1489101903701 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:25:03.892Z"}
+{"level":"info","message":"CLIENT: 1489101908701 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:25:08.897Z"}
+{"level":"info","message":"CLIENT: 1489101908710 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:25:08.901Z"}
+{"level":"info","message":"CLIENT: 1489101913710 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:25:13.907Z"}
+{"level":"info","message":"CLIENT: 1489101913725 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:25:13.916Z"}
+{"level":"info","message":"CLIENT: 1489101918725 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:25:18.925Z"}
+{"level":"info","message":"CLIENT: 1489101918742 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:25:18.936Z"}
+{"level":"info","message":"CLIENT: 1489101923743 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:25:23.938Z"}
+{"level":"info","message":"CLIENT: 1489101923825 Video Streamer Service - Connected","timestamp":"2017-03-09T23:25:24.016Z"}
+{"level":"info","message":"CLIENT: 1489101950531 Video Streamer Service - Starting data stream","timestamp":"2017-03-09T23:25:50.722Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50724","timestamp":"2017-03-09T23:26:24.418Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:26:24.420Z"}
+{"level":"info","message":"CLIENT: 1489101984238 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:26:24.429Z"}
+{"level":"info","message":"CLIENT: 1489101984241 Video: Connected to 10.0.1.246:82","timestamp":"2017-03-09T23:26:24.433Z"}
+{"level":"info","message":"CLIENT: 1489101984241 Video: Unknown data: Video Streamer Service - Connected","timestamp":"2017-03-09T23:26:24.434Z"}
+{"level":"warn","message":"HB: No response the last 2 sec, client timeout!","timestamp":"2017-03-09T23:27:17.445Z"}
+{"level":"warn","message":"HB: No response the last 2 sec, client timeout!","timestamp":"2017-03-09T23:27:21.448Z"}
+{"level":"warn","message":"HB: No response the last 2 sec, client timeout!","timestamp":"2017-03-09T23:27:25.449Z"}
+{"level":"warn","message":"HB: No response the last 2 sec, client timeout!","timestamp":"2017-03-09T23:27:29.451Z"}
+{"level":"warn","message":"HB: No response the last 2 sec, client timeout!","timestamp":"2017-03-09T23:27:32.455Z"}
+{"level":"warn","message":"HB: No response the last 2 sec, client timeout!","timestamp":"2017-03-09T23:27:35.462Z"}
+{"level":"warn","message":"HB: No response the last 2 sec, client timeout!","timestamp":"2017-03-09T23:27:39.464Z"}
+{"level":"warn","message":"HB: No response the last 2 sec, client timeout!","timestamp":"2017-03-09T23:27:42.465Z"}
+{"level":"warn","message":"HB: No response the last 2 sec, client timeout!","timestamp":"2017-03-09T23:27:46.467Z"}
+{"level":"warn","message":"HB: No response the last 2 sec, client timeout!","timestamp":"2017-03-09T23:27:50.471Z"}
+{"level":"warn","message":"HB: No response the last 2 sec, client timeout!","timestamp":"2017-03-09T23:27:53.474Z"}
+{"level":"warn","message":"HB: No response the last 2 sec, client timeout!","timestamp":"2017-03-09T23:27:57.477Z"}
+{"level":"warn","message":"HB: No response the last 2 sec, client timeout!","timestamp":"2017-03-09T23:28:01.478Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50741","timestamp":"2017-03-09T23:28:02.949Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:28:02.951Z"}
+{"level":"info","message":"CLIENT: 1489102082762 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:28:02.953Z"}
+{"level":"info","message":"CLIENT: 1489102082796 Video: Connected to 10.0.1.246:82","timestamp":"2017-03-09T23:28:02.986Z"}
+{"level":"info","message":"CLIENT: 1489102082796 Video: Unknown data: Video Streamer Service - Connected","timestamp":"2017-03-09T23:28:02.987Z"}
+{"level":"warn","message":"HB: No response the last 2 sec, client timeout!","timestamp":"2017-03-09T23:28:04.953Z"}
+{"level":"info","message":"CLIENT: 1489102085117 Video: Unknown data: Video Streamer Service - Starting data stream","timestamp":"2017-03-09T23:28:05.312Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50748","timestamp":"2017-03-09T23:28:15.827Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:28:15.829Z"}
+{"level":"info","message":"CLIENT: 1489102095643 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:28:15.834Z"}
+{"level":"info","message":"CLIENT: 1489102095647 Video: Connected to 10.0.1.246:82","timestamp":"2017-03-09T23:28:15.838Z"}
+{"level":"info","message":"CLIENT: 1489102095648 Video: Unknown data: Video Streamer Service - Connected","timestamp":"2017-03-09T23:28:15.839Z"}
+{"level":"info","message":"CLIENT: 1489102097388 Video: Unknown data: Video Streamer Service - Starting data stream","timestamp":"2017-03-09T23:28:17.578Z"}
+{"level":"info","message":"CLIENT: 1489102125660 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:28:45.851Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50754","timestamp":"2017-03-09T23:28:47.709Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:28:47.709Z"}
+{"level":"info","message":"CLIENT: 1489102127535 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:28:47.725Z"}
+{"level":"info","message":"CLIENT: 1489102127550 Video: Connected to 10.0.1.246:82","timestamp":"2017-03-09T23:28:47.740Z"}
+{"level":"info","message":"CLIENT: 1489102127553 Video: Unknown data: Video Streamer Service - Connected","timestamp":"2017-03-09T23:28:47.743Z"}
+{"level":"info","message":"CLIENT: 1489102128833 Video: Unknown data: Video Streamer Service - Starting data stream","timestamp":"2017-03-09T23:28:49.023Z"}
+{"level":"info","message":"CLIENT: 1489102133760 Video: Unknown data: Video Streamer Service - Starting data stream","timestamp":"2017-03-09T23:28:53.951Z"}
+{"level":"info","message":"CLIENT: 1489102135499 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:28:55.690Z"}
+{"level":"info","message":"CLIENT: 1489102140500 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:29:00.695Z"}
+{"level":"info","message":"CLIENT: 1489102140576 Video Streamer Service - Connected","timestamp":"2017-03-09T23:29:00.766Z"}
+{"level":"info","message":"CLIENT: 1489102140609 Video Streamer Service - Starting data stream","timestamp":"2017-03-09T23:29:00.800Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50768","timestamp":"2017-03-09T23:29:54.504Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:29:54.505Z"}
+{"level":"info","message":"CLIENT: 1489102194318 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:29:54.508Z"}
+{"level":"info","message":"CLIENT: 1489102194336 Video: Connected to 10.0.1.246:82","timestamp":"2017-03-09T23:29:54.526Z"}
+{"level":"info","message":"CLIENT: 1489102194336 Video: Unknown data: Video Streamer Service - Connected","timestamp":"2017-03-09T23:29:54.526Z"}
+{"level":"info","message":"CLIENT: 1489102200655 Video: Unknown data: Video Streamer Service - Starting data stream","timestamp":"2017-03-09T23:30:00.846Z"}
+{"level":"info","message":"CLIENT: 1489102218745 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:30:18.935Z"}
+{"level":"info","message":"CLIENT: 1489102223746 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:30:23.939Z"}
+{"level":"info","message":"CLIENT: 1489102223834 Video Streamer Service - Connected","timestamp":"2017-03-09T23:30:24.024Z"}
+{"level":"info","message":"CLIENT: 1489102223864 Video Streamer Service - Starting data stream","timestamp":"2017-03-09T23:30:24.054Z"}
+{"level":"info","message":"CLIENT: 1489102223951 Video Streamer Service - Starting data stream","timestamp":"2017-03-09T23:30:24.141Z"}
+{"level":"warn","message":"HB: No response the last 2 sec, client timeout!","timestamp":"2017-03-09T23:30:31.523Z"}
+{"level":"warn","message":"HB: No response the last 2 sec, client timeout!","timestamp":"2017-03-09T23:30:34.526Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50776","timestamp":"2017-03-09T23:30:35.189Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:30:35.190Z"}
+{"level":"info","message":"CLIENT: 1489102235007 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:30:35.197Z"}
+{"level":"info","message":"CLIENT: 1489102235009 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:30:35.200Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50779","timestamp":"2017-03-09T23:30:36.279Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:30:36.280Z"}
+{"level":"info","message":"CLIENT: 1489102236136 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:30:36.329Z"}
+{"level":"info","message":"CLIENT: 1489102236137 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:30:36.330Z"}
+{"level":"warn","message":"HB: No response the last 2 sec, client timeout!","timestamp":"2017-03-09T23:30:38.281Z"}
+{"level":"info","message":"CLIENT: 1489102241137 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:30:41.330Z"}
+{"level":"info","message":"CLIENT: 1489102241146 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:30:41.335Z"}
+{"level":"info","message":"CLIENT: 1489102246146 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:30:46.339Z"}
+{"level":"info","message":"CLIENT: 1489102246225 Video Streamer Service - Connected","timestamp":"2017-03-09T23:30:46.417Z"}
+{"level":"info","message":"CLIENT: 1489102246261 Video Streamer Service - Starting data stream","timestamp":"2017-03-09T23:30:46.451Z"}
+{"level":"info","message":"CLIENT: 1489102272087 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:31:12.278Z"}
+{"level":"info","message":"CLIENT: 1489102277089 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:31:17.280Z"}
+{"level":"info","message":"CLIENT: 1489102277094 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:31:17.284Z"}
+{"level":"info","message":"CLIENT: 1489102282097 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:31:22.291Z"}
+{"level":"info","message":"CLIENT: 1489102282110 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:31:22.300Z"}
+{"level":"info","message":"CLIENT: 1489102287110 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:31:27.305Z"}
+{"level":"info","message":"CLIENT: 1489102287120 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:31:27.310Z"}
+{"level":"info","message":"CLIENT: 1489102292121 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:31:32.312Z"}
+{"level":"info","message":"CLIENT: 1489102292140 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:31:32.333Z"}
+{"level":"info","message":"CLIENT: 1489102297147 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:31:37.340Z"}
+{"level":"info","message":"CLIENT: 1489102297228 Video Streamer Service - Connected","timestamp":"2017-03-09T23:31:37.418Z"}
+{"level":"info","message":"CLIENT: 1489102297261 Video Streamer Service - Starting data stream","timestamp":"2017-03-09T23:31:37.452Z"}
+{"level":"info","message":"CLIENT: 1489102329202 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:32:09.392Z"}
+{"level":"info","message":"CLIENT: 1489102334202 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:32:14.394Z"}
+{"level":"info","message":"CLIENT: 1489102334249 Video Streamer Service - Connected","timestamp":"2017-03-09T23:32:14.438Z"}
+{"level":"info","message":"CLIENT: 1489102334283 Video Streamer Service - Starting data stream","timestamp":"2017-03-09T23:32:14.472Z"}
+{"level":"info","message":"CLIENT: 1489102336483 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:32:16.672Z"}
+{"level":"info","message":"CLIENT: 1489102341483 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:32:21.676Z"}
+{"level":"info","message":"CLIENT: 1489102341491 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:32:21.680Z"}
+{"level":"info","message":"CLIENT: 1489102346492 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:32:26.684Z"}
+{"level":"info","message":"CLIENT: 1489102346502 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:32:26.691Z"}
+{"level":"info","message":"CLIENT: 1489102351502 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:32:31.697Z"}
+{"level":"info","message":"CLIENT: 1489102351581 Video Streamer Service - Connected","timestamp":"2017-03-09T23:32:31.772Z"}
+{"level":"info","message":"CLIENT: 1489102351635 Video Streamer Service - Starting data stream","timestamp":"2017-03-09T23:32:31.824Z"}
+{"level":"info","message":"CLIENT: 1489102370706 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:32:50.896Z"}
+{"level":"info","message":"CLIENT: 1489102375706 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:32:55.898Z"}
+{"level":"info","message":"CLIENT: 1489102375787 Video Streamer Service - Connected","timestamp":"2017-03-09T23:32:55.978Z"}
+{"level":"info","message":"CLIENT: 1489102375822 Video Streamer Service - Starting data stream","timestamp":"2017-03-09T23:32:56.011Z"}
+{"level":"info","message":"CLIENT: 1489102386511 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:33:06.700Z"}
+{"level":"info","message":"CLIENT: 1489102391511 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:33:11.703Z"}
+{"level":"info","message":"CLIENT: 1489102391588 Video Streamer Service - Connected","timestamp":"2017-03-09T23:33:11.778Z"}
+{"level":"info","message":"CLIENT: 1489102391635 Video Streamer Service - Starting data stream","timestamp":"2017-03-09T23:33:11.824Z"}
+{"level":"info","message":"CLIENT: 1489102402276 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:33:22.474Z"}
+{"level":"info","message":"CLIENT: 1489102407276 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:33:27.465Z"}
+{"level":"info","message":"CLIENT: 1489102407345 Video Streamer Service - Connected","timestamp":"2017-03-09T23:33:27.533Z"}
+{"level":"info","message":"CLIENT: 1489102407379 Video Streamer Service - Starting data stream","timestamp":"2017-03-09T23:33:27.568Z"}
+{"level":"info","message":"Initializing ROV Class","timestamp":"2017-03-09T23:36:31.092Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-03-09T23:36:31.113Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-03-09T23:36:31.117Z"}
+{"level":"info","message":"Websocket: Listning on 81","timestamp":"2017-03-09T23:36:31.147Z"}
+{"level":"info","message":"Webserver started on port 80","timestamp":"2017-03-09T23:36:31.154Z"}
+{"level":"info","message":"Initializing ROV Class","timestamp":"2017-03-09T23:36:53.467Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-03-09T23:36:53.487Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-03-09T23:36:53.491Z"}
+{"level":"info","message":"Websocket: Listning on 81","timestamp":"2017-03-09T23:36:53.522Z"}
+{"level":"info","message":"Webserver started on port 80","timestamp":"2017-03-09T23:36:53.528Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50873","timestamp":"2017-03-09T23:36:54.205Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:36:54.208Z"}
+{"level":"info","message":"CLIENT: 1489102614012 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:36:54.220Z"}
+{"level":"info","message":"Initializing ROV Class","timestamp":"2017-03-09T23:37:18.048Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-03-09T23:37:18.068Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-03-09T23:37:18.071Z"}
+{"level":"info","message":"Websocket: Listning on 81","timestamp":"2017-03-09T23:37:18.102Z"}
+{"level":"info","message":"Webserver started on port 80","timestamp":"2017-03-09T23:37:18.109Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50891","timestamp":"2017-03-09T23:37:19.570Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:37:19.572Z"}
+{"level":"info","message":"CLIENT: 1489102639400 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:37:19.593Z"}
+{"level":"info","message":"CLIENT: 1489102644371 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:37:24.566Z"}
+{"level":"info","message":"CLIENT: 1489102644378 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:37:24.571Z"}
+{"level":"info","message":"CLIENT: 1489102649378 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:37:29.575Z"}
+{"level":"info","message":"CLIENT: 1489102649388 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:37:29.583Z"}
+{"level":"info","message":"CLIENT: 1489102654388 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:37:34.585Z"}
+{"level":"info","message":"CLIENT: 1489102654399 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:37:34.591Z"}
+{"level":"info","message":"CLIENT: 1489102659399 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:37:39.593Z"}
+{"level":"info","message":"CLIENT: 1489102659403 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:37:39.597Z"}
+{"level":"info","message":"CLIENT: 1489102664405 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:37:44.600Z"}
+{"level":"info","message":"CLIENT: 1489102664415 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:37:44.607Z"}
+{"level":"info","message":"CLIENT: 1489102669416 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:37:49.610Z"}
+{"level":"info","message":"CLIENT: 1489102669421 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:37:49.618Z"}
+{"level":"info","message":"CLIENT: 1489102674422 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:37:54.620Z"}
+{"level":"info","message":"CLIENT: 1489102674433 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:37:54.626Z"}
+{"level":"info","message":"CLIENT: 1489102679433 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:37:59.631Z"}
+{"level":"info","message":"CLIENT: 1489102679450 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:37:59.642Z"}
+{"level":"info","message":"CLIENT: 1489102684450 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:38:04.643Z"}
+{"level":"info","message":"CLIENT: 1489102684455 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:38:04.649Z"}
+{"level":"info","message":"CLIENT: 1489102689455 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:38:09.652Z"}
+{"level":"info","message":"CLIENT: 1489102689467 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:38:09.659Z"}
+{"level":"info","message":"CLIENT: 1489102694467 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:38:14.662Z"}
+{"level":"info","message":"CLIENT: 1489102694474 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:38:14.666Z"}
+{"level":"info","message":"CLIENT: 1489102699475 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:38:19.674Z"}
+{"level":"info","message":"CLIENT: 1489102699484 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:38:19.678Z"}
+{"level":"info","message":"Initializing ROV Class","timestamp":"2017-03-09T23:38:25.489Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-03-09T23:38:25.509Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-03-09T23:38:25.513Z"}
+{"level":"info","message":"Websocket: Listning on 81","timestamp":"2017-03-09T23:38:25.544Z"}
+{"level":"info","message":"Webserver started on port 80","timestamp":"2017-03-09T23:38:25.551Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50923","timestamp":"2017-03-09T23:38:26.507Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:38:26.509Z"}
+{"level":"info","message":"CLIENT: 1489102706328 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:38:26.521Z"}
+{"level":"info","message":"CLIENT: 1489102711310 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:38:31.506Z"}
+{"level":"info","message":"CLIENT: 1489102711319 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:38:31.512Z"}
+{"level":"info","message":"CLIENT: 1489102716737 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:38:36.738Z"}
+{"level":"info","message":"CLIENT: 1489102716745 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:38:36.745Z"}
+{"level":"info","message":"CLIENT: 1489102721745 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:38:41.749Z"}
+{"level":"info","message":"CLIENT: 1489102721754 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:38:41.754Z"}
+{"level":"info","message":"CLIENT: 1489102726755 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:38:46.759Z"}
+{"level":"info","message":"CLIENT: 1489102726765 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:38:46.765Z"}
+{"level":"info","message":"CLIENT: 1489102731766 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:38:51.770Z"}
+{"level":"info","message":"CLIENT: 1489102731779 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:38:51.780Z"}
+{"level":"info","message":"CLIENT: 1489102736779 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:38:56.790Z"}
+{"level":"info","message":"CLIENT: 1489102736797 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:38:56.800Z"}
+{"level":"info","message":"CLIENT: 1489102741797 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:39:01.803Z"}
+{"level":"info","message":"CLIENT: 1489102741814 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:39:01.815Z"}
+{"level":"info","message":"CLIENT: 1489102746815 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:39:06.819Z"}
+{"level":"info","message":"CLIENT: 1489102746823 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:39:06.828Z"}
+{"level":"info","message":"CLIENT: 1489102751823 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:39:11.825Z"}
+{"level":"info","message":"CLIENT: 1489102751833 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:39:11.834Z"}
+{"level":"info","message":"Initializing ROV Class","timestamp":"2017-03-09T23:39:18.369Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-03-09T23:39:18.389Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-03-09T23:39:18.392Z"}
+{"level":"info","message":"Websocket: Listning on 81","timestamp":"2017-03-09T23:39:18.423Z"}
+{"level":"info","message":"Webserver started on port 80","timestamp":"2017-03-09T23:39:18.430Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50956","timestamp":"2017-03-09T23:39:18.793Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:39:18.796Z"}
+{"level":"info","message":"CLIENT: 1489102758798 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:39:18.805Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50963","timestamp":"2017-03-09T23:39:19.467Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:39:19.468Z"}
+{"level":"info","message":"CLIENT: 1489102759476 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:39:19.476Z"}
+{"level":"info","message":"CLIENT: 1489102759479 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:39:19.478Z"}
+{"level":"info","message":"CLIENT: 1489102764479 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:39:24.485Z"}
+{"level":"info","message":"CLIENT: 1489102764483 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:39:24.486Z"}
+{"level":"info","message":"CLIENT: 1489102769483 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:39:29.485Z"}
+{"level":"info","message":"CLIENT: 1489102769487 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:39:29.488Z"}
+{"level":"info","message":"CLIENT: 1489102774650 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:39:34.653Z"}
+{"level":"info","message":"CLIENT: 1489102774658 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:39:34.658Z"}
+{"level":"info","message":"CLIENT: 1489102780593 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:39:40.598Z"}
+{"level":"info","message":"CLIENT: 1489102780602 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:39:40.602Z"}
+{"level":"info","message":"CLIENT: 1489102786620 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:39:46.624Z"}
+{"level":"info","message":"CLIENT: 1489102786629 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:39:46.632Z"}
+{"level":"info","message":"CLIENT: 1489102792729 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:39:52.732Z"}
+{"level":"info","message":"CLIENT: 1489102792738 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:39:52.737Z"}
+{"level":"info","message":"CLIENT: 1489102798795 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:39:58.798Z"}
+{"level":"info","message":"CLIENT: 1489102798800 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:39:58.801Z"}
+{"level":"info","message":"CLIENT: 1489102803800 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:40:03.800Z"}
+{"level":"info","message":"CLIENT: 1489102803807 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:40:03.806Z"}
+{"level":"info","message":"CLIENT: 1489102808809 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:40:08.812Z"}
+{"level":"info","message":"CLIENT: 1489102808822 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:40:08.822Z"}
+{"level":"info","message":"CLIENT: 1489102813822 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:40:13.825Z"}
+{"level":"info","message":"CLIENT: 1489102813838 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:40:13.839Z"}
+{"level":"info","message":"CLIENT: 1489102818838 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:40:18.842Z"}
+{"level":"info","message":"CLIENT: 1489102818847 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:40:18.847Z"}
+{"level":"info","message":"CLIENT: 1489102823847 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:40:23.850Z"}
+{"level":"info","message":"CLIENT: 1489102823858 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:40:23.857Z"}
+{"level":"info","message":"CLIENT: 1489102828858 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:40:28.861Z"}
+{"level":"info","message":"CLIENT: 1489102828888 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:40:28.890Z"}
+{"level":"info","message":"CLIENT: 1489102833888 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:40:33.891Z"}
+{"level":"info","message":"CLIENT: 1489102833906 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:40:33.906Z"}
+{"level":"info","message":"CLIENT: 1489102838906 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:40:38.908Z"}
+{"level":"info","message":"CLIENT: 1489102838932 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:40:38.932Z"}
+{"level":"info","message":"CLIENT: 1489102843935 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:40:43.937Z"}
+{"level":"info","message":"CLIENT: 1489102843958 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:40:43.957Z"}
+{"level":"info","message":"CLIENT: 1489102848958 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:40:48.962Z"}
+{"level":"info","message":"CLIENT: 1489102848979 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:40:48.979Z"}
+{"level":"info","message":"CLIENT: 1489102853979 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:40:53.982Z"}
+{"level":"info","message":"CLIENT: 1489102853996 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:40:53.996Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:50996","timestamp":"2017-03-09T23:40:58.867Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:40:58.869Z"}
+{"level":"info","message":"CLIENT: 1489102858872 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:40:58.876Z"}
+{"level":"info","message":"CLIENT: 1489102858891 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:40:58.891Z"}
+{"level":"info","message":"CLIENT: 1489102863891 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:41:03.893Z"}
+{"level":"info","message":"CLIENT: 1489102863905 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:41:03.906Z"}
+{"level":"info","message":"CLIENT: 1489102868905 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:41:08.911Z"}
+{"level":"info","message":"CLIENT: 1489102868926 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:41:08.926Z"}
+{"level":"info","message":"CLIENT: 1489102873926 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:41:13.930Z"}
+{"level":"info","message":"CLIENT: 1489102873943 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:41:13.942Z"}
+{"level":"info","message":"Initializing ROV Class","timestamp":"2017-03-09T23:41:34.433Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-03-09T23:41:34.454Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-03-09T23:41:34.458Z"}
+{"level":"info","message":"Websocket: Listning on 81","timestamp":"2017-03-09T23:41:34.488Z"}
+{"level":"info","message":"Webserver started on port 80","timestamp":"2017-03-09T23:41:34.495Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:51014","timestamp":"2017-03-09T23:41:36.954Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:41:36.957Z"}
+{"level":"info","message":"CLIENT: 1489102896958 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:41:36.967Z"}
+{"level":"info","message":"CLIENT: 1489102899078 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:41:39.080Z"}
+{"level":"info","message":"CLIENT: 1489102899095 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:41:39.094Z"}
+{"level":"info","message":"Initializing ROV Class","timestamp":"2017-03-09T23:41:41.609Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-03-09T23:41:41.629Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-03-09T23:41:41.633Z"}
+{"level":"info","message":"Websocket: Listning on 81","timestamp":"2017-03-09T23:41:41.663Z"}
+{"level":"info","message":"Webserver started on port 80","timestamp":"2017-03-09T23:41:41.670Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:51018","timestamp":"2017-03-09T23:41:44.452Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:41:44.456Z"}
+{"level":"info","message":"CLIENT: 1489102904459 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:41:44.472Z"}
+{"level":"info","message":"CLIENT: 1489102909111 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:41:49.110Z"}
+{"level":"info","message":"CLIENT: 1489102909117 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:41:49.116Z"}
+{"level":"info","message":"CLIENT: 1489102914118 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:41:54.117Z"}
+{"level":"info","message":"CLIENT: 1489102914129 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:41:54.147Z"}
+{"level":"info","message":"CLIENT: 1489102919129 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:41:59.129Z"}
+{"level":"info","message":"CLIENT: 1489102919149 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:41:59.148Z"}
+{"level":"info","message":"Initializing ROV Class","timestamp":"2017-03-09T23:42:03.399Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-03-09T23:42:03.419Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-03-09T23:42:03.423Z"}
+{"level":"info","message":"Websocket: Listning on 81","timestamp":"2017-03-09T23:42:03.454Z"}
+{"level":"info","message":"Webserver started on port 80","timestamp":"2017-03-09T23:42:03.461Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:51026","timestamp":"2017-03-09T23:42:06.232Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:42:06.235Z"}
+{"level":"info","message":"CLIENT: 1489102926237 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:42:06.245Z"}
+{"level":"info","message":"CLIENT: 1489102929172 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:42:09.171Z"}
+{"level":"info","message":"CLIENT: 1489102929187 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:42:09.186Z"}
+{"level":"info","message":"CLIENT: 1489102934188 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:42:14.192Z"}
+{"level":"info","message":"CLIENT: 1489102934198 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:42:14.197Z"}
+{"level":"info","message":"CLIENT: 1489102939198 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:42:19.197Z"}
+{"level":"info","message":"CLIENT: 1489102939207 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:42:19.206Z"}
+{"level":"info","message":"CLIENT: 1489102944207 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:42:24.206Z"}
+{"level":"info","message":"CLIENT: 1489102944217 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:42:24.216Z"}
+{"level":"info","message":"CLIENT: 1489102949217 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:42:29.216Z"}
+{"level":"info","message":"CLIENT: 1489102949224 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:42:29.223Z"}
+{"level":"info","message":"CLIENT: 1489102954225 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:42:34.224Z"}
+{"level":"info","message":"CLIENT: 1489102954235 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:42:34.237Z"}
+{"level":"info","message":"Initializing ROV Class","timestamp":"2017-03-09T23:42:38.441Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-03-09T23:42:38.461Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-03-09T23:42:38.465Z"}
+{"level":"info","message":"Websocket: Listning on 81","timestamp":"2017-03-09T23:42:38.495Z"}
+{"level":"info","message":"Webserver started on port 80","timestamp":"2017-03-09T23:42:38.502Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:51039","timestamp":"2017-03-09T23:42:41.096Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:42:41.099Z"}
+{"level":"info","message":"CLIENT: 1489102961101 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:42:41.109Z"}
+{"level":"info","message":"CLIENT: 1489102964252 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:42:44.254Z"}
+{"level":"info","message":"CLIENT: 1489102964260 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:42:44.260Z"}
+{"level":"info","message":"CLIENT: 1489102969261 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:42:49.263Z"}
+{"level":"info","message":"CLIENT: 1489102969271 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:42:49.269Z"}
+{"level":"info","message":"CLIENT: 1489102974271 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:42:54.274Z"}
+{"level":"info","message":"CLIENT: 1489102974286 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:42:54.285Z"}
+{"level":"info","message":"CLIENT: 1489102979286 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:42:59.288Z"}
+{"level":"info","message":"CLIENT: 1489102979294 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:42:59.293Z"}
+{"level":"info","message":"CLIENT: 1489102984295 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:43:04.297Z"}
+{"level":"info","message":"CLIENT: 1489102984308 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:43:04.307Z"}
+{"level":"info","message":"CLIENT: 1489102989309 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:43:09.312Z"}
+{"level":"info","message":"CLIENT: 1489102989321 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:43:09.321Z"}
+{"level":"info","message":"CLIENT: 1489102994322 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:43:14.322Z"}
+{"level":"info","message":"CLIENT: 1489102994326 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:43:14.327Z"}
+{"level":"info","message":"CLIENT: 1489102999326 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:43:19.328Z"}
+{"level":"info","message":"CLIENT: 1489102999338 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:43:19.336Z"}
+{"level":"info","message":"CLIENT: 1489103004338 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:43:24.342Z"}
+{"level":"info","message":"CLIENT: 1489103004347 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:43:24.347Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:51064","timestamp":"2017-03-09T23:43:25.340Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:43:25.343Z"}
+{"level":"info","message":"CLIENT: 1489103005344 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:43:25.350Z"}
+{"level":"info","message":"CLIENT: 1489103005345 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:43:25.352Z"}
+{"level":"warn","message":"HB: No response the last 2 sec, client timeout!","timestamp":"2017-03-09T23:43:27.347Z"}
+{"level":"info","message":"CLIENT: 1489103010346 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:43:30.349Z"}
+{"level":"info","message":"CLIENT: 1489103010357 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:43:30.359Z"}
+{"level":"info","message":"CLIENT: 1489103015358 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:43:35.359Z"}
+{"level":"info","message":"CLIENT: 1489103015376 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:43:35.375Z"}
+{"level":"info","message":"CLIENT: 1489103020376 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:43:40.379Z"}
+{"level":"info","message":"CLIENT: 1489103020389 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:43:40.388Z"}
+{"level":"info","message":"CLIENT: 1489103025392 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:43:45.393Z"}
+{"level":"info","message":"CLIENT: 1489103025405 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:43:45.403Z"}
+{"level":"info","message":"Initializing ROV Class","timestamp":"2017-03-09T23:43:50.245Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-03-09T23:43:50.266Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-03-09T23:43:50.270Z"}
+{"level":"info","message":"Websocket: Listning on 81","timestamp":"2017-03-09T23:43:50.301Z"}
+{"level":"info","message":"Webserver started on port 80","timestamp":"2017-03-09T23:43:50.307Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:51076","timestamp":"2017-03-09T23:43:53.171Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:43:53.175Z"}
+{"level":"info","message":"CLIENT: 1489103033173 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:43:53.193Z"}
+{"level":"info","message":"CLIENT: 1489103035423 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:43:55.425Z"}
+{"level":"info","message":"CLIENT: 1489103035431 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:43:55.432Z"}
+{"level":"info","message":"CLIENT: 1489103040432 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:44:00.435Z"}
+{"level":"info","message":"CLIENT: 1489103040443 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:44:00.442Z"}
+{"level":"info","message":"CLIENT: 1489103045444 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:44:05.446Z"}
+{"level":"info","message":"CLIENT: 1489103045458 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:44:05.459Z"}
+{"level":"info","message":"Initializing ROV Class","timestamp":"2017-03-09T23:44:09.315Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-03-09T23:44:09.335Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-03-09T23:44:09.338Z"}
+{"level":"info","message":"Websocket: Listning on 81","timestamp":"2017-03-09T23:44:09.369Z"}
+{"level":"info","message":"Webserver started on port 80","timestamp":"2017-03-09T23:44:09.376Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:51084","timestamp":"2017-03-09T23:44:12.336Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:44:12.338Z"}
+{"level":"info","message":"CLIENT: 1489103052341 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:44:12.347Z"}
+{"level":"info","message":"CLIENT: 1489103055465 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:44:15.465Z"}
+{"level":"info","message":"CLIENT: 1489103055476 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:44:15.479Z"}
+{"level":"info","message":"CLIENT: 1489103060476 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:44:20.481Z"}
+{"level":"info","message":"CLIENT: 1489103060497 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:44:20.496Z"}
+{"level":"info","message":"CLIENT: 1489103065497 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:44:25.500Z"}
+{"level":"info","message":"CLIENT: 1489103065509 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:44:25.507Z"}
+{"level":"info","message":"Initializing ROV Class","timestamp":"2017-03-09T23:44:28.717Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-03-09T23:44:28.738Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-03-09T23:44:28.742Z"}
+{"level":"info","message":"Websocket: Listning on 81","timestamp":"2017-03-09T23:44:28.773Z"}
+{"level":"info","message":"Webserver started on port 80","timestamp":"2017-03-09T23:44:28.780Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:51093","timestamp":"2017-03-09T23:44:31.559Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:44:31.563Z"}
+{"level":"info","message":"CLIENT: 1489103071564 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:44:31.574Z"}
+{"level":"info","message":"CLIENT: 1489103075526 Video: Reconnecting to 10.0.1.246:82","timestamp":"2017-03-09T23:44:35.530Z"}
+{"level":"info","message":"CLIENT: 1489103075535 Video: Lost connection with socket on 10.0.1.246:82, reconnecting in 5 seconds.","timestamp":"2017-03-09T23:44:35.534Z"}
+{"level":"info","message":"Initializing ROV Class","timestamp":"2017-03-09T23:44:46.507Z"}
+{"level":"info","message":"PWM Initialized & Ready","timestamp":"2017-03-09T23:44:46.528Z"}
+{"level":"info","message":"Starting webserver","timestamp":"2017-03-09T23:44:46.531Z"}
+{"level":"info","message":"Websocket: Listning on 81","timestamp":"2017-03-09T23:44:46.562Z"}
+{"level":"info","message":"Webserver started on port 80","timestamp":"2017-03-09T23:44:46.569Z"}
+{"level":"info","message":"Websocket: Remote connection from: ::ffff:10.0.1.73:51101","timestamp":"2017-03-09T23:44:47.497Z"}
+{"level":"info","message":"Websocket: Starting heartbeat","timestamp":"2017-03-09T23:44:47.501Z"}
+{"level":"info","message":"CLIENT: 1489103087525 WebSocket: Connected to 10.0.1.246:81","timestamp":"2017-03-09T23:44:47.528Z"}

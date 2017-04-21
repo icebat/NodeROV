@@ -16,7 +16,7 @@
 	sudo rm node-v6.9.5-linux-armv7l.tar.xz
 	sudo ln -s /opt/nodejs/bin/node /usr/bin/node
 	sudo ln -s /opt/nodejs/bin/npm /usr/bin/npm
-	
+
 x. Allow node to gain access to ports below 1024: //just if you wanna use port 80
 	sudo setcap 'cap_net_bind_service=+ep' /opt/nodejs/bin/node
 
@@ -31,8 +31,8 @@ Enable pi to run the script at boot, add to /etc/rc.local:
 Power -> Sensor -> Board
            |
         5v I V gnd
-        
-        
+
+
 5v  -> Attiny85 -> PWM -> Sensor -> Raspberry
 I   -> Attiny85
 V   -> Attiny 85
@@ -40,6 +40,5 @@ GND -> Attiny85 -> PWM -> Sensor -> Raspberry
 
 
 
-Adafruit 10DOF has 10k pullup on VIN 
+Adafruit 10DOF has 10k pullup on VIN
 Adafruit PWM shield has also 10K pullup on VCC
-
