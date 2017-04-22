@@ -13,7 +13,7 @@ var confirmWaterTight = false;
  *
  *
  ************************/
- 
+
 player.socket = Socket();
 player.socket.log = function(text) { gui.log("Video: "+text); }
 player.socket.onopen = function() { player.socket.send("REQUESTSTREAM"); };
@@ -23,7 +23,7 @@ player.socket.onmessage = function(e) {
   };
   if(player.skipMessages) { return; }
   var frame = new Uint8Array(e.data);
-  player.decode(frame);                  
+  player.decode(frame);
 };
 player.socket.connect(location.hostname, 82);
 $(".fvideo").html(player.canvas);
@@ -39,7 +39,7 @@ $(".fvideo").html(player.canvas);
 gui.init();
 gui.log("Initializing NodeROV GUI");
 gui.socket = socket;
-            
+
 $("canvas").each(function() { $(this).get(0).height = $(this).height(); $(this).get(0).width = $(this).width(); });
 gui.accelCanvas            = $(".fvitals .accelerometer canvas").get(0);
 gui.compassCanvas          = $(".fvitals .compass .rose canvas").get(0);
@@ -48,7 +48,6 @@ gui.dataGraphCanvasContext = $(".fdatagraphics canvas").get(0);
 
 gui.setButton(0, "LEFT LIGHT", function(e) {
   if(gui.getButtonState(0)) {
-    console.log("SEND");
     socket.send("setlight 0 0");
   }
   else {
@@ -67,19 +66,18 @@ gui.setButton(2, "RIGHT LIGHT", function(e) {
 });
 
 gui.setButton(1, "ARM", function(e) { socket.send("armtoggle"); });
-gui.setButton(13, "SET FLAT", function(e) { socket.send("setflat"); });
 gui.setButton(4, "HEADING HOLD", function(e) { socket.send("headinghold"); });
 gui.setButton(5, "DEPTH HOLD", function(e) { socket.send("depthhold"); });
-gui.setButton(6, "RECORD", function(e) { 
+gui.setButton(6, "RECORD", function(e) {
   if(gui.getButtonState(6)) {
     player.socket.send("REQUESTSTREAM");
     gui.setButtonState(6,false);
   }
   else {
-    player.socket.send("REQUESTSTREAM RECORD"); 
+    player.socket.send("REQUESTSTREAM RECORD");
     gui.setButtonState(6,true);
   }
-  
+
 });
 
 
@@ -91,6 +89,7 @@ gui.setButton(7, "FULLSCREEN", function(e) {
 gui.setButton(11, "NEXT ROW ->", function(e) { $(".buttonarray").toggleClass("nextRow"); });
 gui.setButton(21, "<- PREV ROW", function(e) { $(".buttonarray").toggleClass("nextRow"); });
 gui.setButton(12, "<- PREV ROW", function(e) { $(".buttonarray").toggleClass("nextRow"); });
+gui.setButton(13, "SET FLAT", function(e) { socket.send("setflat"); });
 gui.setButton(24, "ADD EVENT", function(e) {
   var msg = "<p>Enter message: <input id='eventmsg' type='text' value='' /></p>";
   popup("Add event", msg, "Add", "Cancel", function() {
@@ -99,7 +98,7 @@ gui.setButton(24, "ADD EVENT", function(e) {
   });
   $("#eventmsg").focus();
 });
-gui.setButton(25, "SCREENSHOT", function(e) { 
+gui.setButton(25, "SCREENSHOT", function(e) {
   var data = $(".fvideo canvas").get(0).toDataURL("image/jpeg", 1);
   var filename = "noderov_"+(Date.now()/1000)+".jpg";
   gui.log("Screenshot saved ("+filename+")");
@@ -132,12 +131,12 @@ controls.onPress(controls.map.depthhold,  function() { socket.send("depthhold");
  *
  *
  ************************/
- 
+
  var voltWarnLevel = 0;
- 
+
 socket.connect(location.hostname, 81);
 socket.log = function(text) { gui.log("WebSocket: "+text); }
-socket.on("hb", function(time) { 
+socket.on("hb", function(time) {
   time = time.split(" ");
   socket.send("hb "+time[0]);
   $("div.field li.ping span").html(time[1]);
@@ -154,15 +153,15 @@ socket.on("telemetryData", function(data) {
   if(rovData.depth.hold == false) $("div.field li.depthhold span").html("OFF");
   else $("div.field li.depthhold span").html(parseInt(rovData.outside.pressure) + "/" + parseInt(rovData.depth.wanted));
   if(rovData.heading.hold == false) $("div.field li.headinghold span").html("OFF");
-  else $("div.field li.headinghold span").html(parseInt(rovData.heading.current+rovData.heading.turns*360) + "/" + parseInt(rovData.heading.wanted));    
+  else $("div.field li.headinghold span").html(parseInt(rovData.heading.totalHeading) + "/" + parseInt(rovData.heading.wanted));    
   // Update lights gui
-  for(i in rovData.lights) { gui.setButtonState(2*i, rovData.lights[i] > 0); }   
+  for(i in rovData.lights) { gui.setButtonState(2*i, rovData.lights[i] > 0); }
 
   // Update armed gui
-  gui.setButtonState(1, rovData.armed);   
-  gui.setButtonState(5, rovData.depth.hold);   
-  gui.setButtonState(4, rovData.heading.hold);   
-    
+  gui.setButtonState(1, rovData.armed);
+  gui.setButtonState(5, rovData.depth.hold);
+  gui.setButtonState(4, rovData.heading.hold);
+
   var insidePressure = parseFloat(rovData.inside.pressure/1000*14.5037738).toFixed(2);
   if(insidePressure < 14 && !vacuumTest) {
     popup("Vacuum test - Stage 1", "<p>Starting automatic vacuum test due to lower internal pressure.<br />Be sure the LiPo battery is not inside and you use a vacuum safe battery.<br /><br />Current pressure is: <span class='currpress'>"+insidePressure+"</span></p>");
@@ -186,7 +185,7 @@ socket.on("telemetryData", function(data) {
     var passed = (Date.now() - vacuumTest) / 1000;
     $(".timepassed").html(Math.round(passed));
     $(".currpress").html(insidePressure);
-    
+
     if(passed > 900 && insidePressure <= 5) {
       vacuumTest = 3;
       gui.log("Vacuum Test: Passed, pressure after 15 minutes are "+insidePressure+" PSI");
@@ -205,7 +204,7 @@ socket.on("telemetryData", function(data) {
       });
     }
   }
-  
+
   // On Screen Warnings:
   if(rovData.volt < 10.5 && voltWarnLevel == 0) {
     gui.overlayText("Voltage warning", 3);
@@ -219,8 +218,8 @@ socket.on("telemetryData", function(data) {
     gui.overlayText("Battery dying", 100);
     voltWarnLevel = 3;
   }
-  
-  
+
+
 });
 socket.on("log", function(data) { data = JSON.parse(data); gui.log(data.message, data.time, true); })
 
@@ -233,13 +232,13 @@ socket.on("log", function(data) { data = JSON.parse(data); gui.log(data.message,
  *
  ************************/
 
-function systemLoop() { 
+function systemLoop() {
   if(controls.changedSinceReturn) {
     socket.send('controls ' + JSON.stringify(controls.returnObject()));
   }
-  
+
   // ! < add it below
-  if(!controls.checkGamepad() && controls.warned) { 
+  if(!controls.checkGamepad() && controls.warned) {
     popup("Connect Gamepad", "Please connect the gamepad to continue.");
     controls.warned = true;
   }
@@ -247,32 +246,32 @@ function systemLoop() {
     popup_hide();
     controls.warned = false;
   }
-  else if(confirmWaterTight == false && controls.warned == false) { 
+  else if(confirmWaterTight == false && controls.warned == false) {
     //popup("Confirm water tightness of chambers", "Check for loose connectors and that vacuum plugs are connected before pressing confirm!", "Confirm");
     confirmWaterTight = true;
   }
-  
+
   if(controls.checkGamepad()) controls.update();
   gui.animateDataGraph();
   if(rovData.heading) {
     gui.drawCompass(rovData.heading.current);
   }
-  
-  
+
+
   if(rovData.outside) {
     var PSI = parseFloat(rovData.outside.pressure/1000*14.5037738).toFixed(2);
     gui.animateScale(1, gui.map(parseInt(PSI), 0, 1450, 0, 100), PSI+" PSI");
     gui.animateScale(2, parseInt(rovData.outside.depth), rovData.outside.depth.toFixed(2)+" M");
     gui.animateScale(3, gui.map(parseInt(rovData.outside.temp), -30, 30, 0, 100), rovData.outside.temp.toFixed(2)+" &deg;");
   }
-  
+
   let d = new Date().toISOString();
   $("time:first").html(d.split('T')[1].split('.')[0]+" UTC");
   $("time:last").html(d.split('T')[0]);
 
   gui.drawAccelerometer(rovData.pitch,rovData.roll);
-  
-  requestAnimationFrame(systemLoop); 
+
+  requestAnimationFrame(systemLoop);
 }
 
 systemLoop();
@@ -301,12 +300,12 @@ function popup(title, message, button1, button2, button1_callback, button2_callb
     $(".msgbox button:last").on('click', button2_callback);
     $(".msgbox button:last").css("display", "");
   }
-  
+
   $(".msgbox h1").html(title);
   $(".msgbox div:first").html(message);
   $(".msgbox").fadeIn();
   $(".msgbox-bg").fadeIn();
-  
+
   $(".msgbox").css("margin-top", $(".msgbox").height()*-1);
 }
 
