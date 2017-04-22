@@ -15,7 +15,8 @@ RemoteOperatedVehicle = function() {
       current: 0,
       wanted : 0,
       PID    : false,
-	  turns  : 0
+      turns  : 0,
+      totalHeading : 0
     },
     roll : 0,
     pitch : 0,
@@ -37,7 +38,7 @@ RemoteOperatedVehicle = function() {
     cpu : 0,
     centerCommand : 1550
   }
-  
+
   self.initialize = function() {
     self.log('info','Initializing ROV Class');
     // Initialize PWM
@@ -50,25 +51,25 @@ RemoteOperatedVehicle = function() {
     self.log('info','PWM & ROV Initialized & Ready');
 
   }
-  
+
   self.log = function(level, text) {
     console.log("Level: "+level+"\nMessage: "+text);
   }
-    
+
   self.arm = function() {
     for(var i in self.motors) { self.motors[i] = self.centerCommand; }
     self.armed = true;
     self.updateThrusters();
     self.log("info", "ROV has been ARMED");
   }
-  
+
   self.disarm = function() {
     for(var i in self.motors) { self.motors[i] = self.centerCommand; }
     self.updateThrusters();
     self.armed = false;
     self.log("info", "ROV has been DISARMED");
   }
-  
+
   self.updateThrusters = function() {
     // If not armed or no changes in thrust
     if(!self.armed || JSON.stringify(self.lastMotors) == JSON.stringify(self.motors)) return;
@@ -79,36 +80,36 @@ RemoteOperatedVehicle = function() {
     self.pwm.setPWM(3, self.motors.backleft);
     self.pwm.setPWM(4, self.motors.upright);
     self.pwm.setPWM(5, self.motors.upleft);
-    
+
     self.lastMotors = JSON.parse(JSON.stringify(self.motors));
   }
   self.setLight = function(no, d) {
     d = parseInt(d);
     no = parseInt(no);
-    if(d > 100) d = 100; 
+    if(d > 100) d = 100;
     if(d < 0) d = 0;
-    
+
     self.lights[no] = d;
     // Range: 1000 ((base)1000 -> 2000)
     var add = 1000 / 100 * d;
     var base = 1000;
     self.pwm.setPWM(6+no,base+add);
   }
-  
-  
+
+
   self.setCamera = function(d) {
     d = parseInt(d);
-    if(d > 100) d = 100; 
+    if(d > 100) d = 100;
     if(d < 0) d = 0;
-    
+
     self.cameraPosition = d;
     // Range: 1200 ((base)900 -> 2100)
     var add = 1200 / 100 * d;
     var base = 900;
     self.pwm.setPWM(8,base+add);
   }
-  
-  
+
+
   return self;
 }
 
