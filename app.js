@@ -211,27 +211,13 @@ setInterval(function() { // Send data to client
     return;
   }
 
+
   /************************
    *
-   * Update ROV controls and stuff
+   * Calibration stuff? :P
    *
    ************************/
-
-  // Calculation for thrust vectoring n stuff?!
-
-  var pwmLo = rov.gain*-1;
-  var pwmHi = rov.gain;
-
-  var forward_command   = utils.map(controls.forward, -100, 100, pwmLo, pwmHi); // -400 to 400 from joystick
-  var strafe_command    = utils.map(controls.strafe,  -100, 100, pwmLo, pwmHi); // -400 to 400 from joystick
-  var yaw_command       = utils.map(controls.yaw,     -100, 100, pwmLo, pwmHi); // -400 to 400 from joystick
-  var climb_command     = utils.map(controls.climb,   -100, 100, pwmLo, pwmHi); // -400 to 400 from joystick
-  var fwd_factor        = 1.41;
-  var strafe_factor     = 1.41;
-  var yaw_factor        = 0.2;
-  var base_command      = rov.centerCommand;
-
-  /* Calibration of accelerometer and magnometer starting */
+    /* Calibration of accelerometer and magnometer starting */
   if(config.accMagCalibration > 0) {
     if(config.accMagCalibration % 10 == 0) {
       if(accmag.calibrate()) { config.accMagCalibrationUpdates = config.accMagCalibration; }
@@ -240,7 +226,6 @@ setInterval(function() { // Send data to client
     let lastUpdate = config.accMagCalibration - config.accMagCalibrationUpdates
 
     config.accMagCalibration ++;
-
 
     if(lastUpdate >= 500) {
       accmag.finishCalibration();
@@ -251,6 +236,23 @@ setInterval(function() { // Send data to client
     }
   }
 
+  /************************
+   *
+   * Update ROV controls and stuff
+   *
+   ************************/
+
+  let pwmLo = rov.gain*-1;
+  let pwmHi = rov.gain;
+
+  let forward_command   = utils.map(controls.forward, -100, 100, pwmLo, pwmHi); // -400 to 400 from joystick
+  let strafe_command    = utils.map(controls.strafe,  -100, 100, pwmLo, pwmHi); // -400 to 400 from joystick
+  let yaw_command       = utils.map(controls.yaw,     -100, 100, pwmLo, pwmHi); // -400 to 400 from joystick
+  let climb_command     = utils.map(controls.climb,   -100, 100, pwmLo, pwmHi); // -400 to 400 from joystick
+  let fwd_factor        = 1.41;
+  let strafe_factor     = 1.41;
+  let yaw_factor        = 0.2;
+  let base_command      = rov.centerCommand;
 
   /************************
    * DEPTH HOLD FUNCTION  *
@@ -280,6 +282,9 @@ setInterval(function() { // Send data to client
   }
   else if(rov.heading.hold && !rov.armed) rov.heading.hold = false;
 
+  /****************************
+   * MOTOR THRUST CALCULATION *
+   ****************************/
   rov.motors.frontleft  = base_command + fwd_factor*forward_command - strafe_factor*strafe_command - yaw_factor*yaw_command;
   rov.motors.backleft   = base_command + fwd_factor*forward_command - strafe_factor*strafe_command + yaw_factor*yaw_command;
   rov.motors.backright  = base_command + fwd_factor*forward_command + strafe_factor*strafe_command - yaw_factor*yaw_command;
@@ -293,7 +298,6 @@ setInterval(function() { // Send data to client
     if(rov.motors[i] < 1150) rov.motors[i] = 1150;
   }
 
-
   // Sends thruster data to thrusters, will only happen if "armed"
   //rov.updateThrusters();
 
@@ -303,29 +307,30 @@ setInterval(function() { // Send data to client
    *
    ************************/
   if(telemTick == 5) {
-    var returnObject      = {};
-    returnObject.volt     = battery.volt;
-    returnObject.mAmp     = battery.mAmp;
-    returnObject.mAmpUsed = battery.mAmpUsed;
-    returnObject.motors   = rov.motors;
-    returnObject.armed    = rov.armed;
-    returnObject.depth    = rov.depth;
-    returnObject.heading  = rov.heading;
-    returnObject.roll     = rov.roll;
-    returnObject.pitch    = rov.pitch;
-    returnObject.gain     = rov.gain;
-    returnObject.lights   = rov.lights;
-    returnObject.disk     = rov.disk;
-    returnObject.cpu      = rov.cpu;
-    returnObject.memory   = rov.memory;
+    var returnObject              = {};
+    returnObject.volt             = battery.volt;
+    returnObject.mAmp             = battery.mAmp;
+    returnObject.mAmpUsed         = battery.mAmpUsed;
+    returnObject.motors           = rov.motors;
+    returnObject.armed            = rov.armed;
+    returnObject.depth            = rov.depth;
+    returnObject.heading          = rov.heading;
+    returnObject.roll             = rov.roll;
+    returnObject.pitch            = rov.pitch;
+    returnObject.gain             = rov.gain;
+    returnObject.lights           = rov.lights;
+    returnObject.disk             = rov.disk;
+    returnObject.cpu              = rov.cpu;
+    returnObject.memory           = rov.memory;
     returnObject.cameraPosition   = rov.cameraPosition;
-    returnObject.accel = accmag.acc;
-    returnObject.outside  = { temp : ptSensorExt.temperature, depth : ptSensorExt.depth(), pressure : ptSensorExt.pressure }
-    returnObject.inside   = { temp : ptSensorInt.temperature, pressure : ptSensorInt.pressure, coreTemp : rov.coreTemp }
+    returnObject.accel            = accmag.acc;
+    returnObject.outside          = { temp : ptSensorExt.temperature, depth : ptSensorExt.depth(), pressure : ptSensorExt.pressure }
+    returnObject.inside           = { temp : ptSensorInt.temperature, pressure : ptSensorInt.pressure, coreTemp : rov.coreTemp }
     client.send("telemetryData "+JSON.stringify(returnObject));
 
     telemTick = 0;
-  } telemTick++;
+  }
+  telemTick++;
 
 
 }, 10);
