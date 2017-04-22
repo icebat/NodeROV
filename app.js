@@ -141,10 +141,10 @@ wss.parseMessage = function(data) {
         break;
 
       case "headinghold":
-    	  if(!rov.armed) {
-    		  logger.log('info', 'Heading hold not activated, ROV not armed');
-    		  return;
-    	  }
+        if(!rov.armed) {
+          logger.log('info', 'Heading hold not activated, ROV not armed');
+          return;
+        }
         rov.heading.PID.reset();
         rov.heading.wanted = rov.heading.totalHeading;
         if(rov.heading.hold) rov.heading.hold = false;
@@ -164,9 +164,9 @@ wss.parseMessage = function(data) {
 
       case "setflat":
         accmag.setFlat();
-    	  config.acc.flat = accmag.acc.flat;
-    	  utils.writeConfig(config);
-    	  logger.log('info', 'ROV Flat calibration set');
+        config.acc.flat = accmag.acc.flat;
+        utils.writeConfig(config);
+        logger.log('info', 'ROV Flat calibration set');
         break;
 
       case "setcamera":
@@ -276,7 +276,7 @@ setInterval(function() { // Send data to client
     else {
       var output = rov.heading.PID.update(rov.heading.wanted, rov.heading.totalHeading);
       yaw_command = output;
-	  }
+    }
   }
   else if(rov.heading.hold && !rov.armed) rov.heading.hold = false;
 
