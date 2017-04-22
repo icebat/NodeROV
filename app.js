@@ -29,24 +29,23 @@ var accmag      = new LSM303();
 
 /************************
  *
- *
- * Some initializing
- *
+ * Initialize scripts
  *
  ************************/
-hb.log = function(level, text) { logger.log(level, text); }
-rov.log = function(level, text) { logger.log(level, text); }
+
+// Replace logging functions on different classes
+hb.log          = function(level, text) { logger.log(level, text); }
+rov.log         = function(level, text) { logger.log(level, text); }
 ptSensorExt.log = function(level, text) { logger.log(level, text); }
 
-// Initialize
+// Initialize all classes which need some initializing.
 rov.initialize();
 gyro.initialize();
 ptSensorExt.initialize();
 ptSensorInt.initialize();
 accmag.initialize();
 
-
-// Create pid controllers
+// Create pid controllers used on the script
 rov.depth.PID   = utils.PID(3, 0.0002, 0, 0, -400, 400);
 rov.heading.PID = utils.PID(3, 0.0002, 0, 0, -400, 400);
 
@@ -66,9 +65,7 @@ accmag.acc.flat   = config.acc.flat;
 
 /************************
  *
- *
  * Web server start
- *
  *
  ************************/
 logger.log('info','Starting webserver');
@@ -78,9 +75,7 @@ http.listen(config.port, function() { logger.log('info', 'Webserver started on p
 
 /************************
  *
- *
- * web socket start
- *
+ * Web socket start
  *
  ************************/
 var wss = new uws({ perMessageDeflate: false, port: config.socketPort });
@@ -108,61 +103,85 @@ wss.parseMessage = function(data) {
   if(typeof data == "string") {
     var cmd = data.split(" ")[0];
     var data = data.substr(cmd.length+1);
-    if(cmd == "hb")             { hb.pulse(data.split(" ")[0]); }
-    else if(cmd == "clog")      { logger.log('info', 'CLIENT: '+data); }
-    else if(cmd == "setlight")  { var d = data.split(" "); rov.setLight(d[0], parseInt(d[1])); }
-    else if(cmd == "armtoggle") { if(rov.armed) { rov.disarm(); } else { rov.arm(); } }
-    else if(cmd == "arm")       { if(!rov.armed) rov.arm(); }
-    else if(cmd == "disarm")    { if(rov.armed) rov.disarm(); }
-    else if(cmd == "depthhold") {
-  	  if(!rov.armed) {
-  		  logger.log('info', 'Depth hold not activated, ROV not armed');
-  		  return;
-  	  }
-      rov.depth.PID.reset();
-      rov.depth.wanted = parseInt(ptSensorExt.pressure);
-      if(rov.depth.hold) rov.depth.hold = false;
-      else rov.depth.hold = true;
 
-      logger.log('info', 'Depth hold is: '+(rov.depth.hold?'Activated' : 'Deactivated'));
-    }
-    else if(cmd == "headinghold") {
-  	  if(!rov.armed) {
-  		  logger.log('info', 'Heading hold not activated, ROV not armed');
-  		  return;
-  	  }
-      rov.heading.PID.reset();
-      rov.heading.wanted = rov.heading.current + rov.heading.turns * 360;
-	  console.log(rov.heading.wanted, rov.heading.turns);
-      if(rov.heading.hold) rov.heading.hold = false;
-      else rov.heading.hold = true;
+    switch(cmd) {
+      case "hb":
+        hb.pulse(data.split(" ")[0]);
+        break;
 
-      logger.log('info', 'Heading hold is: '+(rov.heading.hold?'Activated' : 'Deactivated'));
-    }
-    else if(cmd == "setdepth") { rov.depth.wanted = parseInt(data); }
-    else if(cmd == "setgain") {
-      rov.gain = parseInt(data);
-      if(rov.gain > 400) rov.gain = 400;
-      if(rov.gain < 50) rov.gain = 50;
-    }
-    else if(cmd == "accmagcalibration") {
-      config.accMagCalibration = 1;
-    }
-    else if(cmd == "setflat") {
-      accmag.setFlat();
-	  config.acc.flat = accmag.acc.flat;
-	  utils.writeConfig(config);
-	  logger.log('info', 'ROV Flat calibration set');
-    }
-    else if(cmd == "setcamera") {
-      rov.setCamera(data);
-      console.log(rov.cameraPosition,data);
-    }
-    else if(cmd == "controls") {
-      controls = JSON.parse(data);
-    }
-    else {
-      logger.log('warn', 'Websocket: Unknown command: '+cmd+' ('+data+')');
+      case "clog":
+        logger.log('info', 'CLIENT: '+data);
+        break;
+
+      case "setlight":
+        var d = data.split(" ");
+        rov.setLight(d[0], parseInt(d[1]));
+        break;
+
+      case "armtoggle":
+        if(rov.armed) { rov.disarm(); }
+        else { rov.arm(); }
+        break;
+
+      case "arm":
+        if(!rov.armed) rov.arm();
+        break;
+
+      case "disarm":
+        if(rov.armed) rov.disarm();
+        break;
+
+      case "depthhold":
+        if(!rov.armed) { logger.log('info', 'Depth hold not activated, ROV not armed'); break; }
+        rov.depth.PID.reset();
+        rov.depth.wanted = parseInt(ptSensorExt.pressure);
+        if(rov.depth.hold) rov.depth.hold = false;
+        else rov.depth.hold = true;
+        logger.log('info', 'Depth hold is: '+(rov.depth.hold?'Activated' : 'Deactivated'));
+        break;
+
+      case "headinghold":
+    	  if(!rov.armed) {
+    		  logger.log('info', 'Heading hold not activated, ROV not armed');
+    		  return;
+    	  }
+        rov.heading.PID.reset();
+        rov.heading.wanted = rov.heading.current + rov.heading.turns * 360;
+        if(rov.heading.hold) rov.heading.hold = false;
+        else rov.heading.hold = true;
+        logger.log('info', 'Heading hold is: '+(rov.heading.hold?'Activated' : 'Deactivated'));
+        break;
+
+      case "setdepth":
+        rov.depth.wanted = parseInt(data);
+        break;
+
+
+      case "setgain":
+        rov.gain = parseInt(data);
+        if(rov.gain > 400) rov.gain = 400;
+        if(rov.gain < 50) rov.gain = 50;
+        break;
+
+      case "setflat":
+        accmag.setFlat();
+    	  config.acc.flat = accmag.acc.flat;
+    	  utils.writeConfig(config);
+    	  logger.log('info', 'ROV Flat calibration set');
+        break;
+
+      case "setcamera":
+        rov.setCamera(data);
+        break;
+
+      case "controls":
+        controls = JSON.parse(data);
+        break;
+
+
+      default:
+        logger.log('warn', 'Websocket: Unknown command: '+cmd+' ('+data+')');
+        break;
     }
   }
   else {
