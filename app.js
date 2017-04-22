@@ -146,7 +146,7 @@ wss.parseMessage = function(data) {
     		  return;
     	  }
         rov.heading.PID.reset();
-        rov.heading.wanted = rov.heading.current + rov.heading.turns * 360;
+        rov.heading.wanted = rov.heading.totalHeading;
         if(rov.heading.hold) rov.heading.hold = false;
         else rov.heading.hold = true;
         logger.log('info', 'Heading hold is: '+(rov.heading.hold?'Activated' : 'Deactivated'));
@@ -156,11 +156,10 @@ wss.parseMessage = function(data) {
         rov.depth.wanted = parseInt(data);
         break;
 
-
       case "setgain":
         rov.gain = parseInt(data);
         if(rov.gain > 400) rov.gain = 400;
-        if(rov.gain < 50) rov.gain = 50;
+        if(rov.gain < 50)  rov.gain = 50;
         break;
 
       case "setflat":
@@ -178,7 +177,6 @@ wss.parseMessage = function(data) {
         controls = JSON.parse(data);
         break;
 
-
       default:
         logger.log('warn', 'Websocket: Unknown command: '+cmd+' ('+data+')');
         break;
@@ -192,9 +190,7 @@ wss.parseMessage = function(data) {
 
 /************************
  *
- *
  * Main loop
- *
  *
  ************************/
 
@@ -253,11 +249,12 @@ setInterval(function() { // Send data to client
       console.log("DONE");
       config.accMagCalibration = 0;
     }
-
   }
 
 
-  // If depth hold
+  /************************
+   * DEPTH HOLD FUNCTION  *
+   ************************/
   if(rov.depth.hold && rov.armed) {
     // Getting input, set wished depth to current depth
     if(climb_command != 0) { rov.depth.wanted = parseInt(ptSensorExt.pressure); }
@@ -269,16 +266,17 @@ setInterval(function() { // Send data to client
   }
   else if(rov.depth.hold && !rov.armed) rov.depth.hold = false;
 
-  // If heading hold
+  /*************************
+   * HEADING HOLD FUNCTION *
+   *************************/
   if(rov.heading.hold && rov.armed) {
     // Getting input, set wished heading to current heading
-    if(yaw_command != 0) { rov.heading.wanted = rov.heading.current + rov.heading.turns * 360; }
+    if(yaw_command != 0) { rov.heading.wanted = rov.heading.totalHeading; }
     // No more input, lets hold the heading we wanted!
     else {
-      var output = rov.heading.PID.update(rov.heading.wanted, rov.heading.current + rov.heading.turns * 360);
+      var output = rov.heading.PID.update(rov.heading.wanted, rov.heading.totalHeading);
       yaw_command = output;
-	  console.log(yaw_command);
-    }
+	  }
   }
   else if(rov.heading.hold && !rov.armed) rov.heading.hold = false;
 
@@ -338,18 +336,17 @@ setInterval(function() { // Send data to client
 * Update sensors and get data
 *
 ************************/
-//console.log("DT","Mx","My", "Mz", "Ax", "Ay", "Az", "Gx", "Gy" , "Gz");
-  /*let DT2 = Date.now() - lastTime;
-  //console.log(DT2,accmag.mag.raw.x,accmag.mag.raw.y,accmag.mag.raw.z,accmag.acc.raw.x,accmag.acc.raw.y,accmag.acc.raw.z,gyro.x,gyro.y,gyro.z);
-  lastTime = Date.now();
-var lastTime = Date.now();*/
+
+// Battery, Pressure Sensor (External & Internal)
 setInterval(function() {
   battery.readSensor();
   ptSensorExt.readSensor();
   ptSensorInt.readSensor();
 }, 100);
 
+
 var lastSensorUpdate = Date.now();
+
 gyro.readSensor();
 accmag.readSensor();
 
@@ -373,11 +370,13 @@ setInterval(function() {
   if(Math.abs(rov.heading.current - accmag.heading) > 100) rov.heading.current = accmag.heading;
   let nH = rov.heading.current;
 
-  // Turn Calculator - IaTsI
+  // Turn Calculator - Thanks to IaTsI for helping me.
   let diff = Math.abs(oH-nH);
   if(diff > 180 && oH > nH) { rov.heading.turns ++; }
   if(diff > 180 && nH > oH) { rov.heading.turns --; }
   // End of Fun! :/
+
+  rov.heading.totalHeading = rov.heading.current + rov.heading.turns * 360;
 
   lastSensorUpdate = Date.now();
 }, 20)
