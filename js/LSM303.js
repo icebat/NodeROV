@@ -117,7 +117,7 @@ module.exports = function(acc, mag, device) {
   self.setFlat = function() {
     self.acc.flat.roll = self.rollRaw * -1
     self.acc.flat.pitch = self.pitchRaw * -1
-	console.log(self.acc.flat);
+  console.log(self.acc.flat);
   }
   self.readSensor = function() {
     self.readAccSensor();
@@ -179,9 +179,9 @@ module.exports = function(acc, mag, device) {
     self.pitchRaw   = Theta;
     self.heading    = Psi;
 
-	// Level compensated roll / pitch
-	self.roll = self.rollRaw + self.acc.flat.roll;
-	self.pitch = self.pitchRaw + self.acc.flat.pitch;
+  // Level compensated roll / pitch
+  self.roll = self.rollRaw + self.acc.flat.roll;
+  self.pitch = self.pitchRaw + self.acc.flat.pitch;
   }
 
   self.readAccSensor = function() {
