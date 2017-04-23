@@ -106,6 +106,20 @@ gui.setButton(25, "SCREENSHOT", function(e) {
 
 });
 
+
+gui.setInfoTextTitle(0, "Int. temp:");
+gui.setInfoTextTitle(1, "Int. pressure:");
+gui.setInfoTextTitle(2, "Ext. temp:");
+gui.setInfoTextTitle(3, "Ext. pressure:");
+gui.setInfoTextTitle(4, "Core temp:");
+gui.setInfoTextTitle(5, "mAh:");
+gui.setInfoTextTitle(6, "Gain:");
+gui.setInfoTextTitle(7, "Turns:");
+gui.setInfoTextTitle(8, "Heading Hold:");
+gui.setInfoTextTitle(9, "Depth Hold:");
+gui.setInfoTextTitle(10, "UNUSED:");
+gui.setInfoTextTitle(11, "Ping:");
+
 /************************
  *
  *
@@ -139,22 +153,27 @@ socket.log = function(text) { gui.log("WebSocket: "+text); }
 socket.on("hb", function(time) {
   time = time.split(" ");
   socket.send("hb "+time[0]);
-  $("div.field li.ping span").html(time[1]);
+  gui.setInfoText(12, time[1])
 })
 socket.on("telemetryData", function(data) {
   rovData = JSON.parse(data);
-  $("div.field li.inttemp span").html(parseFloat(rovData.inside.temp).toFixed(2));
-  $("div.field li.intpres span").html(parseFloat(rovData.inside.pressure/1000*14.5037738).toFixed(2));
-  $("div.field li.exttemp span").html(parseFloat(rovData.outside.temp).toFixed(2));
-  $("div.field li.extpres span").html(parseFloat(rovData.outside.pressure/1000*14.5037738).toFixed(2));
-  $("div.field li.coretemp span").html(parseFloat(rovData.inside.coreTemp).toFixed(2));
-  $("div.field li.mahused span").html(parseInt(rovData.mAmpUsed));
-  $("div.field li.gain span").html(parseInt(rovData.gain));
-  $("div.field li.turns span").html(parseInt(rovData.heading.turns));
-  if(rovData.depth.hold == false) $("div.field li.depthhold span").html("OFF");
-  else $("div.field li.depthhold span").html(parseInt(rovData.outside.pressure) + "/" + parseInt(rovData.depth.wanted));
-  if(rovData.heading.hold == false) $("div.field li.headinghold span").html("OFF");
-  else $("div.field li.headinghold span").html(parseInt(rovData.heading.totalHeading) + "/" + parseInt(rovData.heading.wanted));
+
+  gui.setInfoText(1, parseFloat(rovData.inside.temp).toFixed(2))
+  gui.setInfoText(2, parseFloat(parseFloat(rovData.inside.pressure/1000*14.5037738).toFixed(2))
+  gui.setInfoText(3, parseFloat(rovData.outside.temp).toFixed(2))
+  gui.setInfoText(4,parseFloat(rovData.outside.pressure/1000*14.5037738).toFixed(2))
+
+  gui.setInfoText(5, parseFloat(rovData.inside.coreTemp).toFixed(2))
+  gui.setInfoText(6, parseInt(rovData.mAmpUsed))
+  gui.setInfoText(7, parseInt(rovData.gain))
+  gui.setInfoText(8, parseInt(rovData.heading.turns))
+
+  gui.setInfoText(9, rovData.depth.hold ? parseInt(rovData.outside.pressure) + "/" + parseInt(rovData.depth.wanted) : "OFF")
+  gui.setInfoText(9, rovData.heading.hold ? parseInt(rovData.heading.totalHeading) + "/" + parseInt(rovData.heading.wanted) : "OFF")
+  gui.setInfoText(10, parseInt(rovData.heading.turns))
+  //gui.setInfoText(11, parseInt(rovData.heading.turns))
+
+
   // Update lights gui
   for(i in rovData.lights) { gui.setButtonState(2*i, rovData.lights[i] > 0); }
 
