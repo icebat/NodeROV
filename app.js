@@ -45,6 +45,9 @@ ptSensorExt.initialize();
 ptSensorInt.initialize();
 accmag.initialize();
 
+// Calibrate gyro, 10 samples, 10ms appart
+gyro.calibrate(10, 10);
+
 // Create pid controllers used on the script
 rov.depth.PID   = utils.PID(3, 0.0002, 0, 0, -400, 400);
 rov.heading.PID = utils.PID(3, 0.0002, 0, 0, -400, 400);
