@@ -29,6 +29,8 @@ module.exports = function(address, device) {
     address:(typeof address !== 'undefined') ?  address : 0x6b,
     device :(typeof device !== 'undefined') ?  device : '/dev/i2c-1',
     resolution : 0.00875, // Default 250dps res
+    offset: { x : 0, y: 0, z: 0 },
+    calibrateCount: 0,
     x : 0,
     y : 0,
     z : 0,
@@ -49,6 +51,32 @@ module.exports = function(address, device) {
     self.setResolution(250);
     self.enableGyro();
     return true;
+  }
+
+  self.calibrate = function(samples, ms) {
+    console.log("Gyro calib sameple:" + samples, ms+"ms");
+    if(self.calibrationNumber == 0) { self.offset = {x:0,y:0,z:0}; }
+
+    if(samples <= 0) {
+      self.saveCalibration();
+      return;
+    }
+
+    setTimeout(function() {
+      self.readSensor()
+      self.offset.x += self.x;
+      self.offset.y += self.y;
+      self.offset.z += self.z;
+      self.calibrationNumber ++;
+      self.calibrate(samples-1, ms);
+    }, ms);
+  }
+
+  self.saveCalibration = function() {
+    self.offset.x /= self.calibrationNumber;
+    self.offset.y /= self.calibrationNumber;
+    self.offset.z /= self.calibrationNumber;
+    self.calibrationNumber = 0;
   }
 
   self.enableGyro = function() {
@@ -77,13 +105,17 @@ module.exports = function(address, device) {
     self.z = self.z *-1;
     self.y = self.y *-1;
 
+    // Calibration offset
+    self.x -= self.offset.x;
+    self.y -= self.offset.y;
+    // NEW 23.April:
+    self.z -= self.offset.z;
     console.log(self.x, self.y, self.z);
 
     self.x *= self.resolution;
     self.y *= self.resolution;
     self.z *= self.resolution;
-
-
+     // NOW this shows perfect: 0degrees standing still, and shows degrees / sec when i rotate.
 
 
   }
