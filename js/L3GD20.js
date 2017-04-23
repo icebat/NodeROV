@@ -55,7 +55,6 @@ module.exports = function(address, device) {
   }
 
   self.calibrate = function(samples, ms) {
-    console.log("Gyro calib sameple:" + samples, ms+"ms");
     if(self.calibrationNumber == 0) { self.offset = {x:0,y:0,z:0}; }
 
     if(samples <= 0) {
@@ -74,11 +73,9 @@ module.exports = function(address, device) {
   }
 
   self.saveCalibration = function() {
-    console.log(self.offset);
     self.offset.x /= self.calibrateCount;
     self.offset.y /= self.calibrateCount;
     self.offset.z /= self.calibrateCount;
-    console.log(self.offset);
     self.calibrateCount = 0;
   }
 
@@ -114,7 +111,6 @@ module.exports = function(address, device) {
       self.raw.y -= self.offset.y;
       self.raw.z -= self.offset.z;
     }
-    console.log(self.x, self.y, self.z);
 
     self.x = self.raw.x * self.resolution;
     self.y = self.raw.y * self.resolution;
@@ -123,7 +119,6 @@ module.exports = function(address, device) {
 
   self.measureTemperature = function(){
     var data = self.i2c.readBytes( OUT_TEMP , 1, function(err,data){});
-    console.log(data);
     var range = 125;  // -40℃ to +85℃
     var tmp = (data.readInt8() + 128) / 256 * range - 40;
     return tmp;
