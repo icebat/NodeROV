@@ -8,7 +8,7 @@ GUI = function() {
     dataGraphCanvasContext:null,
     socket:null
   };
-  
+
   self.map = function( x,  in_min,  in_max,  out_min,  out_max){
     return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
   }
@@ -16,18 +16,18 @@ GUI = function() {
   self.init = function() {
     self.compassRose.src = 'gfx/compass_rose.png';
   }
-  
+
   self.log = function(text,time,dontsend) {
     if(time == undefined) time = Date.now();
-    
+
     if(socket != null && !dontsend) {
       socket.send("clog "+time+" "+text);
     }
-    
+
     let d = new Date(time).toISOString();
     let timestamp = d.split('T')[1].split('.')[0] + " | " + d.split('T')[0];
     $(".logs table").prepend("<tr><th>"+timestamp+"</th><td>"+text+"</td></tr>");
-    
+
   }
 
   self.drawAccelerometer = function(pitch, roll) {
@@ -86,7 +86,7 @@ GUI = function() {
     ctx.restore();
 
   }
-  
+
   self.drawCompass = function(degrees) {
     if(rovData.heading == undefined) return;
     let canvas = self.compassCanvas;
@@ -103,10 +103,10 @@ GUI = function() {
     var ans = "000".substring(0, 3-degrees.toString().length) + degrees
     $(".fvitals .compass .heading").html(ans);
   }
-  
+
   self.animateDataGraph = function() {
     if(rovData.motors == undefined) return;
-    
+
     let canvas = self.dataGraphCanvasContext;
     let ctx    = canvas.getContext("2d");
     let width  = canvas.width;
@@ -134,7 +134,7 @@ GUI = function() {
     ctx.quadraticCurveTo(x, y, x + r, y);
     ctx.closePath();
     ctx.stroke();
-    
+
     var fl = self.map(rovData.motors.frontleft, 1150,1950,-100,100);
     var fr = self.map(rovData.motors.frontright, 1150,1950,-100,100);
     var ul = self.map(rovData.motors.upleft, 1150,1950,-100,100) * -1;
@@ -183,9 +183,9 @@ GUI = function() {
   self.drawScale = function(ctx, x, y, title, percentage, color, value) {
     ctx.save();
     ctx.translate(x,y);
-    
+
     if(!value) value = percentage;
-    
+
     ctx.font = "bold 20px 'Open Sans'";
     ctx.textAlign = "center";
     ctx.fillStyle = color;
@@ -214,7 +214,7 @@ GUI = function() {
     }
     ctx.restore();
   }
-  
+
   self.drawThruster = function(ctx, x, y, percentage, direction) {
     ctx.save();
     ctx.translate(x,y);
@@ -240,11 +240,11 @@ GUI = function() {
       ctx.lineWidth = 2;
       ctx.strokeStyle = 'rgba(255,255,255,1)';
       ctx.fillStyle = 'rgba(255,255,255,1)';
-      
+
       if(percentage < 0) {
         direction += 180;
       }
-      
+
       ctx.rotate(direction * 0.0174532925);
       ctx.translate(0,-10);
       ctx.beginPath();
@@ -270,22 +270,22 @@ GUI = function() {
 
     ctx.restore();
   }
-  
+
   self.animateScale = function(id, percentage, value) {
     $(".scale"+id+" hr").animate({left:percentage+"%"}, 500);
     var backgroundX = ($(".scale"+id).width()/100*percentage);
     $(".scale"+id).animate({"background-position-x":backgroundX-130}, 500);
     $(".scale"+id+" b").html(value);
   }
-  
+
   self.setButton = function(no, text, callback) {
     if(no <= 23) { var btn = $(".buttonarray button:nth-child("+(no+1)+")"); }
     else { var btn = $(".flog button:nth-child("+(no-23)+")"); }
-   
+
     btn.html(text);
     btn.on("click", callback);
   }
-  
+
   self.setButtonState = function(no, state) {
     if(state) state = "selected";
     else state = "";
@@ -298,21 +298,28 @@ GUI = function() {
     else return;
     return btn.get(0).className == "selected";
   }
-  
+
   self.pressButton = function(no) {
     if(no <= 11) { var btn = $(".buttonarray button:nth-child("+(no+1)+")"); }
     else return;
     btn.click();
   }
-  
+
   self.overlayText = function(message, time) {
     $(".foverlay").html(message);
-    $(".foverlay").fadeIn();    
+    $(".foverlay").fadeIn();
     setTimeout(function() {
       $(".foverlay").fadeOut();
     },time*1000);
   }
- 
+
+  self.setInfoTextTitle = function(no, text) {
+    $(".field .fdata li:nth-child("+(no+1)+") b").html(text);
+  }
+  self.setInfoText = function(no, text) {
+    $(".field .fdata li:nth-child("+(no+1)+") span").html(text);
+  }
+
 
 
   return self;
