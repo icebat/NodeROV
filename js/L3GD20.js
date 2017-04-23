@@ -105,11 +105,12 @@ module.exports = function(address, device) {
     self.z = self.z *-1;
     self.y = self.y *-1;
 
-    // Calibration offset
-    self.x -= self.offset.x;
-    self.y -= self.offset.y;
-    // NEW 23.April:
-    self.z -= self.offset.z;
+    // Calibration offset (only if NOT calibrating!)
+    if(self.calibrationNumber == 0) {
+      self.x -= self.offset.x;
+      self.y -= self.offset.y;
+      self.z -= self.offset.z;
+    }
     console.log(self.x, self.y, self.z);
 
     self.x *= self.resolution;
