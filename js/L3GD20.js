@@ -29,11 +29,12 @@ module.exports = function(address, device) {
     address:(typeof address !== 'undefined') ?  address : 0x6b,
     device :(typeof device !== 'undefined') ?  device : '/dev/i2c-1',
     resolution : 0.00875, // Default 250dps res
-    offset: { x : 0, y: 0, z: 0 },
     calibrateCount: 0,
-    x : 0,
-    y : 0,
-    z : 0,
+    offset : {x:0,y:0,z:0},
+    x      : 0,
+    y      : 0,
+    z      : 0,
+    raw    : {x:0,y:0,z:0}
   }
 
   self.i2c = new i2c(self.address, {device: self.device}),
@@ -64,9 +65,9 @@ module.exports = function(address, device) {
 
     setTimeout(function() {
       self.readSensor()
-      self.offset.x += self.x;
-      self.offset.y += self.y;
-      self.offset.z += self.z;
+      self.offset.x += self.raw.x;
+      self.offset.y += self.raw.y;
+      self.offset.z += self.raw.z;
       self.calibrateCount ++;
       self.calibrate(samples-1, ms);
     }, ms);
@@ -96,31 +97,28 @@ module.exports = function(address, device) {
   self.readSensor = function() {
     var b = self.i2c.readBytes( OUT_X_L | 0x80 , 6, function(err,data){});
 
-    self.x = b[0] | b[1] << 8;
-    self.z = b[2] | b[3] << 8; // Swapped Z and Y cuz of 90deg rotate, hack!!)
-    self.y = b[4] | b[5] << 8;
+    self.raw.x = b[0] | b[1] << 8;
+    self.raw.z = b[2] | b[3] << 8; // Swapped Z and Y cuz of 90deg rotate, hack!!)
+    self.raw.y = b[4] | b[5] << 8;
 
-    if(self.x > 32767) self.x -= 65535;
-    if(self.y > 32767) self.y -= 65535;
-    if(self.z > 32767) self.z -= 65535;
+    if(self.raw.x > 32767) self.raw.x -= 65535;
+    if(self.raw.y > 32767) self.raw.y -= 65535;
+    if(self.raw.z > 32767) self.raw.z -= 65535;
 
-    self.z = self.z *-1;
-    self.y = self.y *-1;
+    self.raw.z = self.raw.z *-1;
+    self.raw.y = self.raw.y *-1;
 
     // Calibration offset (only if NOT calibrating!)
     if(self.calibrateCount == 0) {
-      self.x -= self.offset.x;
-      self.y -= self.offset.y;
-      self.z -= self.offset.z;
+      self.raw.x -= self.offset.x;
+      self.raw.y -= self.offset.y;
+      self.raw.z -= self.offset.z;
     }
     console.log(self.x, self.y, self.z);
 
-    self.x *= self.resolution;
-    self.y *= self.resolution;
-    self.z *= self.resolution;
-     // NOW this shows perfect: 0degrees standing still, and shows degrees / sec when i rotate.
-
-
+    self.x = self.raw.x * self.resolution;
+    self.y = self.raw.y * self.resolution;
+    self.z = self.raw.z * self.resolution;
   }
 
   self.measureTemperature = function(){
