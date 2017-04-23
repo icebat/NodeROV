@@ -150,10 +150,11 @@ socket.on("telemetryData", function(data) {
   $("div.field li.coretemp span").html(parseFloat(rovData.inside.coreTemp).toFixed(2));
   $("div.field li.mahused span").html(parseInt(rovData.mAmpUsed));
   $("div.field li.gain span").html(parseInt(rovData.gain));
+  $("div.field li.turns span").html(parseInt(rovData.heading.turns));
   if(rovData.depth.hold == false) $("div.field li.depthhold span").html("OFF");
   else $("div.field li.depthhold span").html(parseInt(rovData.outside.pressure) + "/" + parseInt(rovData.depth.wanted));
   if(rovData.heading.hold == false) $("div.field li.headinghold span").html("OFF");
-  else $("div.field li.headinghold span").html(parseInt(rovData.heading.totalHeading) + "/" + parseInt(rovData.heading.wanted));    
+  else $("div.field li.headinghold span").html(parseInt(rovData.heading.totalHeading) + "/" + parseInt(rovData.heading.wanted));
   // Update lights gui
   for(i in rovData.lights) { gui.setButtonState(2*i, rovData.lights[i] > 0); }
 
