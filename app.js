@@ -172,6 +172,11 @@ wss.parseMessage = function(data) {
         logger.log('info', 'ROV Flat calibration set');
         break;
 
+      case "calibrategyro":
+        gyro.calibrate(100,10);
+        logger.log('info', 'ROV Gyro Calibration starting. Do not move ROV');
+        break;
+
       case "setcamera":
         rov.setCamera(data);
         break;
