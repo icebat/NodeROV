@@ -312,12 +312,12 @@ GUI = function() {
       $(".foverlay").fadeOut();
     },time*1000);
   }
-
-  self.setInfoTextTitle = function(no, text) {
-    $(".field .fdata li:nth-child("+(no+1)+") b").html(text);
-  }
-  self.setInfoText = function(no, text) {
-    $(".field .fdata li:nth-child("+(no+1)+") span").html(text);
+0
+  self.setInfo = function(no, text, title = false) {
+	var ulNo = Math.ceil(no/4);
+	var liNo = no - (4*(ulNo-1));
+	if(title) $(".fdata ul:nth-of-type("+ulNo+"n) li:nth-child("+liNo+"n) b").html(title);
+    $(".fdata ul:nth-of-type("+ulNo+"n) li:nth-child("+liNo+"n) span").html(text);
   }
 
 
