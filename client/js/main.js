@@ -90,6 +90,7 @@ gui.setButton(11, "NEXT ROW ->", function(e) { $(".buttonarray").toggleClass("ne
 gui.setButton(21, "<- PREV ROW", function(e) { $(".buttonarray").toggleClass("nextRow"); });
 gui.setButton(12, "<- PREV ROW", function(e) { $(".buttonarray").toggleClass("nextRow"); });
 gui.setButton(13, "SET FLAT", function(e) { socket.send("setflat"); });
+gui.setButton(14, "CALIBRATE GYRO", function(e) { socket.send("calibrategyro"); });
 gui.setButton(24, "ADD EVENT", function(e) {
   var msg = "<p>Enter message: <input id='eventmsg' type='text' value='' /></p>";
   popup("Add event", msg, "Add", "Cancel", function() {
