@@ -1,8 +1,8 @@
 /*
-  Created by TJWeb 2017 
-  www.tjweb.no 
+  Created by TJWeb 2017
+  www.tjweb.no
   thorleif@tjweb.no
-  
+
   Datasheet: https://www.pololu.com/file/0J731/L3GD20H.pdf
   Model: L3GD20H
 */
@@ -33,7 +33,7 @@ module.exports = function(address, device) {
     y : 0,
     z : 0,
   }
-  
+
   self.i2c = new i2c(self.address, {device: self.device}),
 
   self.setResolution = function(res) {
@@ -41,7 +41,7 @@ module.exports = function(address, device) {
     if(res == 500)  { self.resolution = 0.0175;  self.i2c.writeBytes( CTRL_REG4 , [0x10], function(err,data){}); }
     if(res == 2000) { self.resolution = 0.07;    self.i2c.writeBytes( CTRL_REG4 , [0x20], function(err,data){}); }
   }
-  
+
   self.initialize = function() {
     var whoAmI = self.i2c.readBytes( WHO_AM_I , 1, function(err,data){});
     if(whoAmI[0] != 0xD7) { return false; }
@@ -50,45 +50,44 @@ module.exports = function(address, device) {
     self.enableGyro();
     return true;
   }
-  
+
   self.enableGyro = function() {
     self.i2c.writeBytes( CTRL_REG1 , [0x0f], function(err,data){});
   }
-  
+
   self.disableGyro = function() {
     self.i2c.writeBytes( CTRL_REG1 , [0x00], function(err,data){});
   }
-  
+
   self.resetGyro = function() {
     self.i2c.writeBytes( LOW_ODR , [0x04], function(err,data){});
   }
-  
-  self.readSensor = function() { 
+
+  self.readSensor = function() {
     var b = self.i2c.readBytes( OUT_X_L | 0x80 , 6, function(err,data){});
-       
+
     self.x = b[0] | b[1] << 8;
     self.z = b[2] | b[3] << 8; // Swapped Z and Y cuz of 90deg rotate, hack!!)
     self.y = b[4] | b[5] << 8;
-    
+
     if(self.x > 32767) self.x -= 65535;
     if(self.y > 32767) self.y -= 65535;
     if(self.z > 32767) self.z -= 65535;
-    
+
     self.z = self.z *-1;
     self.y = self.y *-1;
-    
-    // Manual calibration hacked in
-    self.y += -305;
-    self.z += -305;
-    
+
+    console.log(self.x, self.y, self.z);
+
     self.x *= self.resolution;
     self.y *= self.resolution;
     self.z *= self.resolution;
-    
-    
-        
+
+
+
+
   }
-  
+
   self.measureTemperature = function(){
     var data = self.i2c.readBytes( OUT_TEMP , 1, function(err,data){});
     console.log(data);
@@ -96,6 +95,6 @@ module.exports = function(address, device) {
     var tmp = (data.readInt8() + 128) / 256 * range - 40;
     return tmp;
   }
-  
+
   return self;
 }
