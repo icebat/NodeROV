@@ -67,16 +67,17 @@ module.exports = function(address, device) {
       self.offset.x += self.x;
       self.offset.y += self.y;
       self.offset.z += self.z;
-      self.calibrationNumber ++;
+      self.calibrateCount ++;
       self.calibrate(samples-1, ms);
     }, ms);
   }
 
   self.saveCalibration = function() {
-    self.offset.x /= self.calibrationNumber;
-    self.offset.y /= self.calibrationNumber;
-    self.offset.z /= self.calibrationNumber;
-    self.calibrationNumber = 0;
+    self.offset.x /= self.calibrateCount;
+    self.offset.y /= self.calibrateCount;
+    self.offset.z /= self.calibrateCount;
+    console.log(self.offset);
+    self.calibrateCount = 0;
   }
 
   self.enableGyro = function() {
@@ -106,7 +107,7 @@ module.exports = function(address, device) {
     self.y = self.y *-1;
 
     // Calibration offset (only if NOT calibrating!)
-    if(self.calibrationNumber == 0) {
+    if(self.calibrateCount == 0) {
       self.x -= self.offset.x;
       self.y -= self.offset.y;
       self.z -= self.offset.z;
