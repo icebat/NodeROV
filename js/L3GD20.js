@@ -73,6 +73,7 @@ module.exports = function(address, device) {
   }
 
   self.saveCalibration = function() {
+    console.log(self.offset);
     self.offset.x /= self.calibrateCount;
     self.offset.y /= self.calibrateCount;
     self.offset.z /= self.calibrateCount;
