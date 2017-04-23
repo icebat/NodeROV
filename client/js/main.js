@@ -159,7 +159,7 @@ socket.on("telemetryData", function(data) {
   rovData = JSON.parse(data);
 
   gui.setInfoText(1, parseFloat(rovData.inside.temp).toFixed(2))
-  gui.setInfoText(2, parseFloat(parseFloat(rovData.inside.pressure/1000*14.5037738).toFixed(2))
+  gui.setInfoText(2, parseFloat(rovData.inside.pressure/1000*14.5037738).toFixed(2))
   gui.setInfoText(3, parseFloat(rovData.outside.temp).toFixed(2))
   gui.setInfoText(4,parseFloat(rovData.outside.pressure/1000*14.5037738).toFixed(2))
 
