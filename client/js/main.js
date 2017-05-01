@@ -25,7 +25,7 @@ player.socket.onmessage = function(e) {
   var frame = new Uint8Array(e.data);
   player.decode(frame);
 };
-//player.socket.connect(location.hostname, 82);
+player.socket.connect(location.hostname, 82);
 $(".fvideo").html(player.canvas);
 
 /************************
@@ -172,7 +172,7 @@ socket.on("telemetryData", function(data) {
   gui.setInfo(9, rovData.heading.hold ? parseInt(rovData.heading.totalHeading) + "/" + parseInt(rovData.heading.wanted) : "OFF")
   gui.setInfo(10, rovData.depth.hold ? parseInt(rovData.outside.pressure) + "/" + parseInt(rovData.depth.wanted) : "OFF")
   gui.setInfo(11, parseInt(rovData.heading.turns))
-  //gui.setInfo(11, "Unused")
+  //gui.setInfo(12, "Unused")
 
 
   // Update lights gui
