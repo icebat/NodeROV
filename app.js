@@ -307,7 +307,7 @@ setInterval(function() { // Send data to client
   }
 
   // Sends thruster data to thrusters, will only happen if "armed"
-  //rov.updateThrusters();
+  rov.updateThrusters();
 
   /************************
    *
