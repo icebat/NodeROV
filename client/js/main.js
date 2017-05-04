@@ -162,7 +162,7 @@ socket.on("telemetryData", function(data) {
   gui.setInfo(1, parseFloat(rovData.inside.temp).toFixed(2))
   gui.setInfo(2, parseFloat(rovData.inside.pressure/1000*14.5037738).toFixed(2))
   gui.setInfo(3, parseFloat(rovData.outside.temp).toFixed(2))
-  gui.setInfo(4,parseFloat(rovData.outside.pressure/1000*14.5037738).toFixed(2))
+  gui.setInfo(4, parseFloat(rovData.outside.pressure/1000*14.5037738).toFixed(2))
 
   gui.setInfo(5, parseFloat(rovData.inside.coreTemp).toFixed(2))
   gui.setInfo(6, parseInt(rovData.mAmpUsed))
