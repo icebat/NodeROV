@@ -1,5 +1,5 @@
 
-var config          = { width : 1280, height: 720, fps : 15, port : 82 }
+var config          = { width : 1296, height: 730, fps : 15, port : 82 }
 
 var spawn           = require('child_process').spawn;
 var Splitter        = require('stream-split');
@@ -17,19 +17,19 @@ wss.on('connection', function(socket) {
   console.log("Video Streamer Service : Incomming connection");
   console.log("Video Streamer Service : Accepted connection");
   socket.send("Video Streamer Service - Connected");
-  
+
   socket.on("message", function(data){
     var cmd = "" + data, action = data.split(' ')[0];
     console.log("Video Streamer Service : Incomming data: %s",data);
-  
+
     if(action == "REQUESTSTREAM") {
       console.log("Video Streamer Service : Starting data stream");
-      start_stream(data == "REQUESTSTREAM RECORD");      
+      start_stream(data == "REQUESTSTREAM RECORD");
     }
     if(action == "STOPSTREAM")
       readStream.pause();
   });
-  
+
   socket.on('close', function() {
     readStream.end();
     streamer.kill('SIGHUP');
@@ -37,7 +37,7 @@ wss.on('connection', function(socket) {
     sck.close();
     sck = null;
   });
-  
+
   sck = socket;
   sck.buzy = false;
 });
@@ -50,28 +50,28 @@ function start_stream(record) {
     sck.buzy = false;
   }
   catch(e) { }
-  
-  
-  
-  streamer = spawn('raspivid', ['-t', '0', 
+
+
+
+  streamer = spawn('raspivid', ['-t', '0',
                                 '-awb', 'auto',
                                 '-ex', 'auto',
                                 //'-ISO', '800',
                                 //'-b', 10 * 1000000, //2bps bitrate
                                 //'-ss', 1/250 * 1000000, //1/20s shutter speed
                                 '-mm', 'average',
-                                '-o', '-', 
-                                '-w', config.width, 
-                                '-h', config.height, 
-                                '-fps', config.fps, 
-                                '-vf', '-hf', 
+                                '-o', '-',
+                                '-w', config.width,
+                                '-h', config.height,
+                                '-fps', config.fps,
+                                '-vf', '-hf',
                                 '-pf', 'baseline']);
-                                  
+
   streamer.on("exit", function(code){ if(code != null) console.log("Failure", code); });
   readStream = streamer.stdout.pipe(new Splitter(NALseparator));
-  
-  //  
-  
+
+  //
+
   var file = new Date().toISOString().split('T')[0]+'_'+new Date().toISOString().split('T')[1].split('.')[0]+'.h264';
   if(record) {
     streamer.stdout.pipe(fs.createWriteStream('./recordings/' + file, {flags: 'a'}))
@@ -81,15 +81,15 @@ function start_stream(record) {
   else {
     sck.send("Video Streamer Service: Starting data stream without recording");
   }
-  
+
   // Free memory
   exec('sudo /sbin/sysctl vm.drop_caches=3');
 
-  
-  readStream.on("data", function(data) {  
-    if(sck.buzy && data.length > 10) { 
+
+  readStream.on("data", function(data) {
+    if(sck.buzy && data.length > 10) {
       console.log("Video Streamer Service : Dropping frame, TCP socket busy");
-      return; 
+      return;
     }
 
     sck.buzy = true;
