@@ -278,7 +278,7 @@ setInterval(function() { // Send data to client
   /*************************
    * HEADING HOLD FUNCTION *
    *************************/
-  if(rov.heading.hold && rov.armed && false == true) {
+  if(rov.heading.hold && rov.armed && false == true) { // Deactivated heading hold in code for now
     // Getting input, set wished heading to current heading
     if(yaw_command != 0) { rov.heading.wanted = rov.heading.totalHeading*10; }
     // No more input, lets hold the heading we wanted!
