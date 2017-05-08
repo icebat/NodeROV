@@ -73,7 +73,7 @@ RemoteOperatedVehicle = function() {
   self.updateThrusters = function() {
     // If not armed or no changes in thrust
     if(!self.armed || JSON.stringify(self.lastMotors) == JSON.stringify(self.motors)) return;
-    console.log("Changing thruster");
+
     self.pwm.setPWM(0, self.motors.frontright);
     self.pwm.setPWM(1, self.motors.frontleft);
     self.pwm.setPWM(2, self.motors.backright);
