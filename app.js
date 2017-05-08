@@ -46,11 +46,10 @@ ptSensorInt.initialize();
 accmag.initialize();
 
 // Calibrate gyro, 10 samples, 10ms appart
-gyro.calibrate(100, 10);
 
 // Create pid controllers used on the script
-rov.depth.PID   = utils.PID(3, 0.0002, 0, 0, -400, 400);
-rov.heading.PID = utils.PID(3, 0.0002, 0, 0, -400, 400);
+rov.depth.PID   = utils.PID(5, 0, 0, 0, -400, 400);
+rov.heading.PID = utils.PID(3, 0, 0, 0, -400, 400);
 
 // Populate accel & mag calibration:
 accmag.acc.offset = config.acc.offset;
@@ -149,7 +148,7 @@ wss.parseMessage = function(data) {
           return;
         }
         rov.heading.PID.reset();
-        rov.heading.wanted = rov.heading.totalHeading;
+        rov.heading.wanted = rov.heading.totalHeading*10;
         if(rov.heading.hold) rov.heading.hold = false;
         else rov.heading.hold = true;
         logger.log('info', 'Heading hold is: '+(rov.heading.hold?'Activated' : 'Deactivated'));
@@ -259,7 +258,7 @@ setInterval(function() { // Send data to client
   let climb_command     = utils.map(controls.climb,   -100, 100, pwmLo, pwmHi); // -400 to 400 from joystick
   let fwd_factor        = 1.41;
   let strafe_factor     = 1.41;
-  let yaw_factor        = 0.2;
+  let yaw_factor        = 0.9;
   let base_command      = rov.centerCommand;
 
   /************************
@@ -279,23 +278,24 @@ setInterval(function() { // Send data to client
   /*************************
    * HEADING HOLD FUNCTION *
    *************************/
-  if(rov.heading.hold && rov.armed) {
+  if(rov.heading.hold && rov.armed && false == true) {
     // Getting input, set wished heading to current heading
-    if(yaw_command != 0) { rov.heading.wanted = rov.heading.totalHeading; }
+    if(yaw_command != 0) { rov.heading.wanted = rov.heading.totalHeading*10; }
     // No more input, lets hold the heading we wanted!
     else {
-      var output = rov.heading.PID.update(rov.heading.wanted, rov.heading.totalHeading);
+      var output = rov.heading.PID.update(rov.heading.wanted, rov.heading.totalHeading*10);
       yaw_command = output;
     }
   }
   else if(rov.heading.hold && !rov.armed) rov.heading.hold = false;
 
+
   /****************************
    * MOTOR THRUST CALCULATION *
    ****************************/
   rov.motors.frontleft  = base_command + fwd_factor*forward_command - strafe_factor*strafe_command - yaw_factor*yaw_command;
-  rov.motors.backleft   = base_command + fwd_factor*forward_command - strafe_factor*strafe_command + yaw_factor*yaw_command;
-  rov.motors.backright  = base_command + fwd_factor*forward_command + strafe_factor*strafe_command - yaw_factor*yaw_command;
+  rov.motors.backleft   = base_command + fwd_factor*forward_command + strafe_factor*strafe_command - yaw_factor*yaw_command;
+  rov.motors.backright  = base_command + fwd_factor*forward_command - strafe_factor*strafe_command + yaw_factor*yaw_command;
   rov.motors.frontright = base_command + fwd_factor*forward_command + strafe_factor*strafe_command + yaw_factor*yaw_command;
   rov.motors.upleft     = base_command - climb_command;
   rov.motors.upright    = base_command + climb_command;
