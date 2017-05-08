@@ -139,8 +139,8 @@ GUI = function() {
     var fr = self.map(rovData.motors.frontright, 1150,1950,-100,100);
     var ul = self.map(rovData.motors.upleft, 1150,1950,-100,100) * -1;
     var ur = self.map(rovData.motors.upright, 1150,1950,-100,100);
-    var bl = self.map(rovData.motors.backleft, 1150,1950,-100,100);
-    var br = self.map(rovData.motors.backright, 1150,1950,-100,100);
+    var bl = self.map(rovData.motors.backleft, 1150,1950,100,-100);
+    var br = self.map(rovData.motors.backright, 1150,1950,100,-100);
 
     /* FL */ self.drawThruster(ctx, x, y, fl, 45);
     /* FR */ self.drawThruster(ctx, x+100, y, fr, 315);
